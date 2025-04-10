@@ -1,17 +1,10 @@
 const { Client, Events, GatewayIntentBits, SlashCommandBuilder, REST, Routes, EmbedBuilder } = require("discord.js");
+const {sokkaCommand, tenzinCommand} = require("commandBuilder.js");
 const express = require('express');
 require('dotenv').config();
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
-const sokkaCommand = new SlashCommandBuilder()
-    .setName("sokka")
-    .setDescription("Interact with Sokka!")
-    .addSubcommand(subcommand =>
-        subcommand
-            .setName("talent-tree")
-            .setDescription("View Sokka's talent tree"))
-    .toJSON(); // This is required for the REST API
 
 client.once(Events.ClientReady, async (c) => {
     console.log(`Logged in as ${c.user.username}`);
@@ -23,7 +16,7 @@ client.once(Events.ClientReady, async (c) => {
         console.log('Registering slash commands...');
         await rest.put(
             Routes.applicationCommands(c.user.id),  // Global command
-            { body: [sokkaCommand] }
+            { body: [sokkaCommand, tenzinCommand] }
         );
         console.log('Slash command registered.');
     } catch (err) {
@@ -34,19 +27,20 @@ client.once(Events.ClientReady, async (c) => {
 client.on(Events.InteractionCreate, async interaction => {
     if (!interaction.isCommand()) return;
 
-    if (interaction.commandName === 'sokka') {
+    if (interaction.commandName === 'tenzin') {
         if (interaction.options.getSubcommand() === 'talent-tree') {
             try {
-                // Create the embeds
-                const embed1 = new EmbedBuilder()
-                    .setColor(0x0099FF)
-                    .setTitle("Sokka's talent tree part 1")
-                    .setImage('https://cdn.discordapp.com/attachments/1351788502265630750/1352158339596816384/IMG_5158.png');  // Replace with actual image URL
+                // Define the path to the local image
+                const imagePath = path.join(__dirname, 'images', 'tenzin_talent_tree_part_1.png'); // Change this to your actual image name
 
-                const embed2 = new EmbedBuilder()
+                // Create an AttachmentBuilder to attach the image
+                const file = new AttachmentBuilder(imagePath);
+
+                // Create an Embed for the image
+                const embed = new EmbedBuilder()
                     .setColor(0x0099FF)
-                    .setTitle("Sokka's talent tree part 2")
-                    .setImage('https://cdn.discordapp.com/attachments/1351788502265630750/1352158340284813313/IMG_5159.png');  // Replace with actual image URL
+                    .setTitle("Tenzins's Talent Tree Part 1")
+                    .setImage('attachment://tenzin_talent_tree_part_1.png'); // Ensure this matches the image filename
 
                 // 1. Defer the reply immediately after the interaction is received
                 await interaction.deferReply();
@@ -54,7 +48,8 @@ client.on(Events.InteractionCreate, async interaction => {
                 // 2. Simulate some processing (e.g., fetching data or working with APIs)
                 setTimeout(async () => {
                     // 3. After processing, send the final reply with both embeds
-                    await interaction.editReply({ embeds: [embed1, embed2] });
+                    // Send the message with the embed and image
+                    await interaction.reply({ embeds: [embed], files: [file] });
                 }, 1000); // Simulate a delay of 1 second for processing
             } catch (error) {
                 console.error('Error handling interaction:', error);
