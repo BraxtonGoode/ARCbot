@@ -1,4 +1,4 @@
-const { Client, Events, GatewayIntentBits, SlashCommandBuilder, REST, Routes, EmbedBuilder } = require("discord.js");
+const { Client, Events, GatewayIntentBits, REST, Routes, EmbedBuilder } = require("discord.js");
 const {sokkaCommand, tenzinCommand} = require("./commandBuilder.js");
 const express = require('express');
 require('dotenv').config();
