@@ -1,10 +1,10 @@
-const { Client, Events, GatewayIntentBits, REST, Routes, EmbedBuilder } = require("discord.js");
-const {sokkaCommand, tenzinCommand} = require("./commandBuilder.js");
+const { Client, Events, GatewayIntentBits, REST, Routes, EmbedBuilder, AttachmentBuilder } = require("discord.js");
+const { sokkaCommand, tenzinCommand } = require("./commandBuilder.js");
 const express = require('express');
+const path = require('path'); // Import the path module
 require('dotenv').config();
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
-
 
 client.once(Events.ClientReady, async (c) => {
     console.log(`Logged in as ${c.user.username}`);
@@ -27,6 +27,7 @@ client.once(Events.ClientReady, async (c) => {
 client.on(Events.InteractionCreate, async interaction => {
     if (!interaction.isCommand()) return;
 
+    // Handling /tenzin command
     if (interaction.commandName === 'tenzin') {
         if (interaction.options.getSubcommand() === 'talent-tree') {
             try {
@@ -39,10 +40,10 @@ client.on(Events.InteractionCreate, async interaction => {
                 // Create an Embed for the image
                 const embed = new EmbedBuilder()
                     .setColor(0x0099FF)
-                    .setTitle("Tenzins's Talent Tree Part 1")
+                    .setTitle("Tenzin's Talent Tree Part 1")
                     .setImage('attachment://tenzin_talent_tree_part_1.png'); // Ensure this matches the image filename
 
-                // 1. Defer the reply immediately after the interaction is received
+                // 1. Defer the reply immediately after receiving the interaction
                 await interaction.deferReply();
 
                 // 2. Simulate some processing (e.g., fetching data or working with APIs)
