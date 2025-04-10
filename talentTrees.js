@@ -21,3 +21,6 @@ export async function tenzinTree(interaction) {
         }
 }
 
+module.exports = {
+    tenzinTree
+};
