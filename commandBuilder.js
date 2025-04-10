@@ -21,7 +21,17 @@ const tenzinCommand = new SlashCommandBuilder()
             .setDescription("View Tenzin's talent tree"))
     .toJSON(); // This is required for the REST API
 
+const kyoshiCommand = new SlashCommandBuilder()
+.setName("kyoshi")
+.setDescription("Interact with Kyoshi!")
+.addSubcommand(subcommand =>
+    subcommand
+        .setName("talent-tree")
+        .setDescription("View Kyoshi's talent tree"))
+.toJSON(); // This is required for the REST API
+
 module.exports = {
     sokkaCommand,
-    tenzinCommand
+    tenzinCommand,
+    kyoshiCommand   
 };

@@ -1,8 +1,23 @@
 const { Client, Events, GatewayIntentBits, REST, Routes } = require("discord.js");
-const { sokkaCommand, tenzinCommand } = require("./commandBuilder"); // Import the command builder
-const { tenzinTree, sokkaTree } = require("./talentTrees.js"); // Import the talent tree function
+const { sokkaCommand, tenzinCommand, kyoshiCommand } = require("./commandBuilder.js"); // Import the command builder
+const { talentTree } = require("./talentTrees.js"); // Import the talent tree function
 const express = require('express');
 require('dotenv').config();
+
+const fs = require('fs');
+
+// Read the characters JSON file
+let characters = {};
+try {
+    const data = fs.readFileSync('./characters.json', 'utf8');
+    characters = JSON.parse(data);
+} catch (err) {
+    console.error('Error reading characters.json:', err);
+}
+
+if (!characters || Object.keys(characters).length === 0) {
+    console.error('No characters data found.');
+}
 
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
@@ -14,23 +29,27 @@ client.once(Events.ClientReady, async (c) => {
     try {
         console.log('Registering slash commands...');
         await rest.put(
-            Routes.applicationCommands(c.user.id),  // Global command
-            { body: [sokkaCommand, tenzinCommand] }
+            Routes.applicationCommands(client.user.id), // Register global commands
+            {
+                body: [sokkaCommand, tenzinCommand, kyoshiCommand], // Register the commands
+            }
         );
-        console.log('Slash command registered.');
+        console.log('Slash commands registered.');
     } catch (err) {
         console.error('Error registering slash command:', err);
     }
 });
 
-client.on(Events.InteractionCreate, async interaction => {
-    if (!interaction.isCommand()) return;
-
-    if (interaction.commandName === 'tenzin') {
-        await tenzinTree(interaction); // Call the function to handle Tenzin's talent tree command
-    }
-    if (interaction.commandName === 'sokka') {
-        await sokkaTree(interaction); // Call the function to handle Tenzin's talent tree command
+client.on('interactionCreate', async (interaction) => {
+    if (interaction.isCommand()) {
+        // Loop through all the character names in the JSON file
+        Object.keys(characters).forEach(async (characterName) => {
+            if (interaction.commandName === characterName) {
+                console.log(`Command received: ${interaction.commandName}`);
+                // If the command name matches a character, call the talentTree function to handle the command
+                await talentTree(interaction, characterName); // Passing character name as an argument if needed
+            }
+        });
     }
 });
 

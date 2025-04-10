@@ -1,0 +1,18 @@
+{
+    "kyoshi": {
+      "name": "kyoshi",
+      "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1360022575459074109/IMG_4580.png?ex=67f99b39&is=67f849b9&hm=35a697eb4de5080fc5650019c4e2fbeb23b7945cadfbdf05e2accf3c37e69e3f&",
+      "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1360022804438712413/IMG_4581.png?ex=67f99b70&is=67f849f0&hm=6d8c23da15b739ddb0f11c71e9bf5c00d937dcf302b0c68b0681072fc025968d&"
+    },
+    "sokka": {
+      "name": "sokka",
+      "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1360029402724831405/IMG_5158.png?ex=67f9a195&is=67f85015&hm=d74b3e5a7b999e23eea898736be18fbce54215a44fc38f9e545c33c1f200b800&",
+      "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1360029508488532140/IMG_5159.png?ex=67f9a1ae&is=67f8502e&hm=128091c4d92605e4bc62f5b80c871ebc20c5e8c426118d4dbcc41a9771fc3dff&"
+    },
+    "tenzin": {
+      "name": "tenzin",
+      "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1360029863821443172/IMG_5245.png?ex=67f9a203&is=67f85083&hm=c44fc724763249da6ae37d4af582343602c282495a4a81f160815c454647aac2&",
+      "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1360029931442278541/IMG_5246.png?ex=67f9a213&is=67f85093&hm=286fde1190450ce686b76cddf5376bd0176e6e7f2da337f4de1575ec8ae8c63b&"
+    }
+  }
+  
