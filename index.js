@@ -1,6 +1,6 @@
 const { Client, Events, GatewayIntentBits, REST, Routes, EmbedBuilder, AttachmentBuilder } = require("discord.js");
 const { sokkaCommand, tenzinCommand } = require("./commandBuilder"); // Import the command builder
-const { tenzinTree } = require("./talentTrees"); // Import the talent tree function
+const { tenzinTree } = require("./talentTrees.js"); // Import the talent tree function
 const express = require('express');
 require('dotenv').config();
 
@@ -27,7 +27,7 @@ client.on(Events.InteractionCreate, async interaction => {
     if (!interaction.isCommand()) return;
 
     if (interaction.commandName === 'tenzin') {
-        tenzinTree(interaction); // Call the function to handle Tenzin's talent tree command
+        await tenzinTree(interaction); // Call the function to handle Tenzin's talent tree command
     }
 });
 
