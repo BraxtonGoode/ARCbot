@@ -32,7 +32,7 @@ client.on(Events.InteractionCreate, async interaction => {
                 console.log("Current working directory: ", __dirname);
 
                 // Get the path to the local image file (adjust the filename as necessary)
-                const imagePath = path.join(__dirname, 'images', 'tenzin_talent_tree_part_1.png'); // Path to your image
+                const imagePath = path.join(__dirname, 'images', 'tenzin_talent_tree_1.png'); // Path to your image
 
                 // Create an AttachmentBuilder to attach the image from the local path
                 const file = new AttachmentBuilder(imagePath);
@@ -41,7 +41,7 @@ client.on(Events.InteractionCreate, async interaction => {
                 const embed = new EmbedBuilder()
                     .setColor(0x0099FF)
                     .setTitle("Tenzin's Talent Tree Part 1")
-                    .setImage('attachment://tenzin_talent_tree_part_1.png'); // Ensure this matches the image filename
+                    .setImage('attachment://tenzin_talent_tree_1.png'); // Ensure this matches the image filename
 
                 await interaction.deferReply();
 
