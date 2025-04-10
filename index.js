@@ -1,49 +1,54 @@
-const { Client, Events, GatewayIntentBits, SlashCommandBuilder } = require('discord.js');
+const { Client, Events, GatewayIntentBits, SlashCommandBuilder, REST, Routes } = require("discord.js");
 require('dotenv').config();
-const express = require('express');  // Import Express
-const app = express();              // Create an Express app
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 const sokkaCommand = new SlashCommandBuilder()
-  .setName('sokka')
-  .setDescription('Replies with "Katarra"')
-  .toJSON(); // required for REST API
+    .setName("sokka")
+    .setDescription("Interact with Sokka!")
+    .addSubcommand(subcommand =>
+        subcommand
+            .setName("talent-tree")
+            .setDescription("View Sokka's talent tree"))
+    .toJSON(); // This is required for the REST API
 
 client.once(Events.ClientReady, async (c) => {
-  console.log(`Logged in as ${c.user.username}`);
+    console.log(`Logged in as ${c.user.username}`);
 
-  // Register the slash command
-  const rest = new (require('discord.js')).REST({ version: '10' }).setToken(process.env.TOKEN);
+    // Register the main command with subcommands
+    const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 
-  try {
-    console.log('Registering slash command...');
-    await rest.put(
-      require('discord.js').Routes.applicationCommands(c.user.id), // Global command
-      { body: [sokkaCommand] }
-    );
-    console.log('Slash command registered.');
-  } catch (err) {
-    console.error('Error registering slash command:', err);
-  }
+    try {
+        console.log('Registering slash commands...');
+        await rest.put(
+            Routes.applicationCommands(c.user.id),  // Global command
+            { body: [sokkaCommand] }
+        );
+        console.log('Slash command registered.');
+    } catch (err) {
+        console.error('Error registering slash command:', err);
+    }
 });
 
-client.on(Events.InteractionCreate, async (interaction) => {
-  if (!interaction.isChatInputCommand()) return;
+client.on(Events.InteractionCreate, async interaction => {
+    if (!interaction.isCommand()) return;
 
-  if (interaction.commandName === 'sokka') {
-    await interaction.reply('Katarra');
-  }
-});
+    // Handle the subcommand /sokka talent-tree
+    if (interaction.commandName === 'sokka') {
+        if (interaction.options.getSubcommand() === 'talent-tree') {
+            try {
+                // Defer the reply, this acknowledges the interaction and gives us time to respond
+                await interaction.deferReply();
 
-// Create a simple route to keep the service alive
-app.get('/', (req, res) => {
-  res.send('Bot is running!');
-});
-
-// Make the bot respond to requests on Render's port
-app.listen(process.env.PORT || 3000, () => {
-  console.log('Web server running on port 3000');
+                // Simulating some processing (e.g., fetching data from an API)
+                setTimeout(async () => {
+                    await interaction.editReply("Sokka's Talent Tree: \n1. Boomerang Mastery\n2. Waterbending\n3. Strategy");
+                }, 1000); // Simulating delay
+            } catch (error) {
+                console.error('Error handling interaction:', error);
+            }
+        }
+    }
 });
 
 client.login(process.env.TOKEN);
