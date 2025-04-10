@@ -1,0 +1,16 @@
+{
+  "name": "arcbot",
+  "version": "1.0.0",
+  "description": "Avatar realms collide discord bot.",
+  "license": "ISC",
+  "author": "Braxton Goode",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.18.0"
+  }
+}
