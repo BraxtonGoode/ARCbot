@@ -1,7 +1,7 @@
 const { Client, Events, GatewayIntentBits, REST, Routes, EmbedBuilder, AttachmentBuilder } = require("discord.js");
 const { sokkaCommand, tenzinCommand } = require("./commandBuilder.js");
 const express = require('express');
-const path = require('path'); // Import the path module
+const path = require('path');
 require('dotenv').config();
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
@@ -27,7 +27,6 @@ client.once(Events.ClientReady, async (c) => {
 client.on(Events.InteractionCreate, async interaction => {
     if (!interaction.isCommand()) return;
 
-    // Handling /tenzin command
     if (interaction.commandName === 'tenzin') {
         if (interaction.options.getSubcommand() === 'talent-tree') {
             try {
@@ -43,14 +42,16 @@ client.on(Events.InteractionCreate, async interaction => {
                     .setTitle("Tenzin's Talent Tree Part 1")
                     .setImage('attachment://tenzin_talent_tree_part_1.png'); // Ensure this matches the image filename
 
-                // 1. Defer the reply immediately after receiving the interaction
+                // Defer the reply immediately after receiving the interaction
                 await interaction.deferReply();
 
-                // 2. Simulate some processing (e.g., fetching data or working with APIs)
+                // Simulate processing or other tasks
                 setTimeout(async () => {
-                    // 3. After processing, send the final reply with both embeds
-                    // Send the message with the embed and image
-                    await interaction.reply({ embeds: [embed], files: [file] });
+                    // Make sure we haven't already replied or deferred
+                    if (!interaction.replied) {
+                        // Send the message with the embed and image
+                        await interaction.editReply({ embeds: [embed], files: [file] });
+                    }
                 }, 1000); // Simulate a delay of 1 second for processing
             } catch (error) {
                 console.error('Error handling interaction:', error);
