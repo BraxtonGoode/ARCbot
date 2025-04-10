@@ -1,4 +1,5 @@
 const { Client, Events, GatewayIntentBits, SlashCommandBuilder, REST, Routes } = require("discord.js");
+const express = require('express');
 require('dotenv').config();
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
@@ -49,6 +50,18 @@ client.on(Events.InteractionCreate, async interaction => {
             }
         }
     }
+});
+
+// Start the Express server (port 3000)
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Bot is running!');
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
 
 client.login(process.env.TOKEN);
