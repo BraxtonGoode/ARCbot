@@ -49,8 +49,14 @@ client.on(Events.InteractionCreate, async interaction => {
                 .setTitle("Sokka's talent tree part 2")
                 .setImage('https://cdn.discordapp.com/attachments/1351788502265630750/1352158340284813313/IMG_5159.png?ex=67f805d6&is=67f6b456&hm=92880d99de4b6a86eb418ef3ee2064622312df9a82bb694de5a459213287fc19&');  // Replace with actual image URL
 
+                // 1. Defer the reply immediately after the interaction is received
+                await interaction.deferReply();
 
-                await interaction.editReply({ embeds: [embed1, embed2] });
+                // 2. Simulate some processing (e.g., fetching data or working with APIs)
+                setTimeout(async () => {
+                    // 3. Edit the reply once processing is done
+                    await interaction.editReply({ embeds: [embed1, embed2] });
+                }, 1000); // Simulate a delay of 1 second for processing
             } catch (error) {
                 console.error('Error handling interaction:', error);
             }
