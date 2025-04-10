@@ -1,4 +1,4 @@
-const { Client, Events, GatewayIntentBits, SlashCommandBuilder, REST, Routes } = require("discord.js");
+const { Client, Events, GatewayIntentBits, SlashCommandBuilder, REST, Routes, EmbedBuilder } = require("discord.js");
 const express = require('express');
 require('dotenv').config();
 
@@ -50,7 +50,7 @@ client.on(Events.InteractionCreate, async interaction => {
                 .setImage('https://cdn.discordapp.com/attachments/1351788502265630750/1352158340284813313/IMG_5159.png?ex=67f805d6&is=67f6b456&hm=92880d99de4b6a86eb418ef3ee2064622312df9a82bb694de5a459213287fc19&');  // Replace with actual image URL
 
 
-                await interaction.editReply({ embeds: [embed1, embed2, embed3] });
+                await interaction.editReply({ embeds: [embed1, embed2] });
             } catch (error) {
                 console.error('Error handling interaction:', error);
             }
