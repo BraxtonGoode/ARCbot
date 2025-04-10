@@ -38,13 +38,19 @@ client.on(Events.InteractionCreate, async interaction => {
     if (interaction.commandName === 'sokka') {
         if (interaction.options.getSubcommand() === 'talent-tree') {
             try {
-                // Defer the reply, this acknowledges the interaction and gives us time to respond
-                await interaction.deferReply();
+                // Send multiple embeds (images) one after the other
+                const embed1 = new EmbedBuilder()
+                .setColor(0x0099FF)
+                .setTitle("Sokka's talent tree part 1")
+                .setImage('https://cdn.discordapp.com/attachments/1351788502265630750/1352158339596816384/IMG_5158.png?ex=67f805d6&is=67f6b456&hm=57c808cfd17a0d49ce6a4c7ab30fdcbe5d80597b6ba2f2990cd670f7528aa968&');  // Replace with actual image URL
 
-                // Simulating some processing (e.g., fetching data from an API)
-                setTimeout(async () => {
-                    await interaction.editReply("Sokka's Talent Tree: \n1. Boomerang Mastery\n2. Waterbending\n3. Strategy");
-                }, 1000); // Simulating delay
+                const embed2 = new EmbedBuilder()
+                .setColor(0x0099FF)
+                .setTitle("Sokka's talent tree part 2")
+                .setImage('https://cdn.discordapp.com/attachments/1351788502265630750/1352158340284813313/IMG_5159.png?ex=67f805d6&is=67f6b456&hm=92880d99de4b6a86eb418ef3ee2064622312df9a82bb694de5a459213287fc19&');  // Replace with actual image URL
+
+
+                await interaction.editReply({ embeds: [embed1, embed2, embed3] });
             } catch (error) {
                 console.error('Error handling interaction:', error);
             }
