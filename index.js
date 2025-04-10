@@ -34,27 +34,26 @@ client.once(Events.ClientReady, async (c) => {
 client.on(Events.InteractionCreate, async interaction => {
     if (!interaction.isCommand()) return;
 
-    // Handle the subcommand /sokka talent-tree
     if (interaction.commandName === 'sokka') {
         if (interaction.options.getSubcommand() === 'talent-tree') {
             try {
-                // Send multiple embeds (images) one after the other
+                // Create the embeds
                 const embed1 = new EmbedBuilder()
-                .setColor(0x0099FF)
-                .setTitle("Sokka's talent tree part 1")
-                .setImage('https://cdn.discordapp.com/attachments/1351788502265630750/1352158339596816384/IMG_5158.png?ex=67f805d6&is=67f6b456&hm=57c808cfd17a0d49ce6a4c7ab30fdcbe5d80597b6ba2f2990cd670f7528aa968&');  // Replace with actual image URL
+                    .setColor(0x0099FF)
+                    .setTitle("Sokka's talent tree part 1")
+                    .setImage('https://cdn.discordapp.com/attachments/1351788502265630750/1352158339596816384/IMG_5158.png');  // Replace with actual image URL
 
                 const embed2 = new EmbedBuilder()
-                .setColor(0x0099FF)
-                .setTitle("Sokka's talent tree part 2")
-                .setImage('https://cdn.discordapp.com/attachments/1351788502265630750/1352158340284813313/IMG_5159.png?ex=67f805d6&is=67f6b456&hm=92880d99de4b6a86eb418ef3ee2064622312df9a82bb694de5a459213287fc19&');  // Replace with actual image URL
+                    .setColor(0x0099FF)
+                    .setTitle("Sokka's talent tree part 2")
+                    .setImage('https://cdn.discordapp.com/attachments/1351788502265630750/1352158340284813313/IMG_5159.png');  // Replace with actual image URL
 
                 // 1. Defer the reply immediately after the interaction is received
                 await interaction.deferReply();
 
                 // 2. Simulate some processing (e.g., fetching data or working with APIs)
                 setTimeout(async () => {
-                    // 3. Edit the reply once processing is done
+                    // 3. After processing, send the final reply with both embeds
                     await interaction.editReply({ embeds: [embed1, embed2] });
                 }, 1000); // Simulate a delay of 1 second for processing
             } catch (error) {
