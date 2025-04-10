@@ -1,14 +1,14 @@
 const { Client, Events, GatewayIntentBits, REST, Routes, EmbedBuilder, AttachmentBuilder } = require("discord.js");
-const { sokkaCommand, tenzinCommand } = require("./commandBuilder.js");
+const { sokkaCommand, tenzinCommand } = require("./commandBuilder"); // Import the command builder
 const express = require('express');
 require('dotenv').config();
+const path = require('path');  // Import path module to handle file paths
+
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.once(Events.ClientReady, async (c) => {
     console.log(`Logged in as ${c.user.username}`);
-
-    // Register the main command with subcommands
     const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 
     try {
@@ -30,23 +30,25 @@ client.on(Events.InteractionCreate, async interaction => {
         if (interaction.options.getSubcommand() === 'talent-tree') {
             try {
 
-                // Create an Embed for the image
+                // Get the path to the local image file (adjust the filename as necessary)
+                const imagePath = path.join(__dirname, 'images', 'tenzin_talent_tree_part_1.png'); // Path to your image
+
+                // Create an AttachmentBuilder to attach the image from the local path
+                const file = new AttachmentBuilder(imagePath);
+
+                // Create the embed with the image
                 const embed = new EmbedBuilder()
                     .setColor(0x0099FF)
                     .setTitle("Tenzin's Talent Tree Part 1")
-                    .setImage('https://drive.google.com/file/d/1zL6Isa3SkoeyA-PzLiDarYJtSnwYg29v/view?usp=drive_link'); // Ensure this matches the image filename
+                    .setImage('attachment://tenzin_talent_tree_part_1.png'); // Ensure this matches the image filename
 
-                // Defer the reply immediately after receiving the interaction
                 await interaction.deferReply();
 
-                // Simulate processing or other tasks
                 setTimeout(async () => {
-                    // Make sure we haven't already replied or deferred
-                    if (!interaction.replied) {
-                        // Send the message with the embed and image
-                        await interaction.editReply({ embeds: [embed]});
-                    }
+                    // Reply with the embed and the attached image
+                    await interaction.editReply({ embeds: [embed], files: [file] });
                 }, 1000); // Simulate a delay of 1 second for processing
+
             } catch (error) {
                 console.error('Error handling interaction:', error);
             }
