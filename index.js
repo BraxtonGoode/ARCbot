@@ -29,6 +29,7 @@ client.on(Events.InteractionCreate, async interaction => {
     if (interaction.commandName === 'tenzin') {
         if (interaction.options.getSubcommand() === 'talent-tree') {
             try {
+                console.log("Current working directory: ", __dirname);
 
                 // Get the path to the local image file (adjust the filename as necessary)
                 const imagePath = path.join(__dirname, 'images', 'tenzin_talent_tree_part_1.png'); // Path to your image
