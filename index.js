@@ -1,7 +1,6 @@
 const { Client, Events, GatewayIntentBits, REST, Routes, EmbedBuilder, AttachmentBuilder } = require("discord.js");
 const { sokkaCommand, tenzinCommand } = require("./commandBuilder.js");
 const express = require('express');
-const path = require('path');
 require('dotenv').config();
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
@@ -30,17 +29,12 @@ client.on(Events.InteractionCreate, async interaction => {
     if (interaction.commandName === 'tenzin') {
         if (interaction.options.getSubcommand() === 'talent-tree') {
             try {
-                // Define the path to the local image
-                const imagePath = path.join(__dirname, 'images', 'tenzin_talent_tree_part_1.png'); // Change this to your actual image name
-
-                // Create an AttachmentBuilder to attach the image
-                const file = new AttachmentBuilder(imagePath);
 
                 // Create an Embed for the image
                 const embed = new EmbedBuilder()
                     .setColor(0x0099FF)
                     .setTitle("Tenzin's Talent Tree Part 1")
-                    .setImage('attachment://tenzin_talent_tree_part_1.png'); // Ensure this matches the image filename
+                    .setImage('https://drive.google.com/file/d/1zL6Isa3SkoeyA-PzLiDarYJtSnwYg29v/view?usp=drive_link'); // Ensure this matches the image filename
 
                 // Defer the reply immediately after receiving the interaction
                 await interaction.deferReply();
@@ -50,7 +44,7 @@ client.on(Events.InteractionCreate, async interaction => {
                     // Make sure we haven't already replied or deferred
                     if (!interaction.replied) {
                         // Send the message with the embed and image
-                        await interaction.editReply({ embeds: [embed], files: [file] });
+                        await interaction.editReply({ embeds: [embed]});
                     }
                 }, 1000); // Simulate a delay of 1 second for processing
             } catch (error) {
