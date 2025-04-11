@@ -1,5 +1,4 @@
 const { Client, Events, GatewayIntentBits, REST, Routes } = require("discord.js");
-// const { sokkaCommand, tenzinCommand, kyoshiCommand, korraCommand, zukoCommand, azulaCommand} = require("./commandBuilder.js"); // Import the command builder
 const { commands } = require("./commandBuilder.js");
 const { talentTree } = require("./talentTrees.js"); // Import the talent tree function
 const express = require('express');
