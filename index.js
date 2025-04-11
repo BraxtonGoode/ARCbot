@@ -1,5 +1,6 @@
 const { Client, Events, GatewayIntentBits, REST, Routes } = require("discord.js");
-const { sokkaCommand, tenzinCommand, kyoshiCommand } = require("./commandBuilder.js"); // Import the command builder
+// const { sokkaCommand, tenzinCommand, kyoshiCommand, korraCommand, zukoCommand, azulaCommand} = require("./commandBuilder.js"); // Import the command builder
+const { commands } = require("./commandBuilder.js");
 const { talentTree } = require("./talentTrees.js"); // Import the talent tree function
 const express = require('express');
 require('dotenv').config();
@@ -31,7 +32,7 @@ client.once(Events.ClientReady, async (c) => {
         await rest.put(
             Routes.applicationCommands(client.user.id), // Register global commands
             {
-                body: [sokkaCommand, tenzinCommand, kyoshiCommand], // Register the commands
+                body: commands, // Register the commands
             }
         );
         console.log('Slash commands registered.');
