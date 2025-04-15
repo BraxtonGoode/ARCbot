@@ -1,5 +1,5 @@
 const { Client, Events, GatewayIntentBits, REST, Routes } = require("discord.js");
-const { commands } = require("./commandBuilder.js");
+const { commands, tipCommands } = require("./commandBuilder.js");
 const { talentTree } = require("./talentTrees.js"); // Import the talent tree function
 const express = require('express');
 require('dotenv').config();
@@ -31,7 +31,7 @@ client.once(Events.ClientReady, async (c) => {
         await rest.put(
             Routes.applicationCommands(client.user.id), // Register global commands
             {
-                body: commands, // Register the commands
+                body: [commands, tipCommands] // Register the commands
             }
         );
         console.log('Slash commands registered.');
