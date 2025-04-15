@@ -5,23 +5,28 @@ const fs = require('fs');
 const tips = JSON.parse(fs.readFileSync('tips.json', 'utf8'));
 
 async function generalTips(interaction, tipName) {
-    await interaction.reply("did this enter general tips function"); // Defer the reply to give time for processing
+    console.log(`General tip for ${tipName}`);
 
+    if (tips[tipName]) {
+        const tip = tips[tipName];
 
-    // console.log(`General tip for ${tipName}`);
+        // Start building the embed
+        const embed = new EmbedBuilder()
+            .setColor(0x0099FF)
+            .setTitle(tip.name)
+            .setDescription(tip.Content);
 
-    // if (tips[tipName]) {
-    //     const tip = tips[tipName];
+        // Check if a Pro Tip exists and append it to the embed
+        if (tip["Pro Tip"]) {
+            embed.addFields(
+                { name: 'Pro Tip', value: tip["Pro Tip"], inline: false }
+            );
+        }
 
-    //     const embed = new EmbedBuilder()
-    //         .setColor(0x0099FF)
-    //         .setTitle(tip.name)
-    //         .setDescription(tip.Content);
-
-    //     await interaction.reply({ embeds: [embed] });
-    // } else {
-    //     await interaction.reply(`General tip on "${tipName}" was not found.`);
-    // }
+        await interaction.reply({ embeds: [embed] });
+    } else {
+        await interaction.reply(`General tip on "${tipName}" was not found.`);
+    }
 }
 
 module.exports = { generalTips };
