@@ -21,17 +21,24 @@ if (!characters || Object.keys(characters).length === 0) {
 
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
-
 client.once(Events.ClientReady, async (c) => {
     console.log(`Logged in as ${c.user.username}`);
     const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 
     try {
         console.log('Registering slash commands...');
+        
+        // Flatten the arrays and ensure they are all in proper JSON format
+        const allCommands = [...commands, ...tipCommands];
+
+        // Check if the structure is as expected before sending
+        console.log('Commands to register:', allCommands);
+
+        // Send the request with the flattened array of commands
         await rest.put(
             Routes.applicationCommands(client.user.id), // Register global commands
             {
-                body: [commands, tipCommands], // Directly use commands and tipCommands
+                body: allCommands, // Flattened array directly
             }
         );
         console.log('Slash commands registered.');
@@ -39,6 +46,7 @@ client.once(Events.ClientReady, async (c) => {
         console.error('Error registering slash command:', err);
     }
 });
+
 
 
 
