@@ -61,27 +61,49 @@ client.once(Events.ClientReady, async (c) => {
 });
 
 
-
-
 client.on('interactionCreate', async (interaction) => {
     if (interaction.isCommand()) {
-        // Loop through all the character names in the JSON file
-        Object.keys(characters).forEach(async (characterName) => {
+        // Handle character commands
+        for (const characterName of Object.keys(characters)) {
             if (interaction.commandName === characterName) {
-                console.log(`Command received: ${interaction.commandName}`);
-                // If the command name matches a character, call the talentTree function to handle the command
-                await talentTree(interaction, characterName); // Passing character name as an argument if needed
+                console.log(`Character command received: ${interaction.commandName}`);
+                // If the command matches a character, call the talentTree function
+                await talentTree(interaction, characterName);
             }
-        });
-        Object.keys(tips).forEach(async (tipName) => {
+        }
+
+        // Handle tip commands
+        for (const tipName of Object.keys(tips)) {
             if (interaction.commandName === tipName) {
-                console.log(`Command received: ${interaction.commandName}`);
-                // If the command name matches a character, call the talentTree function to handle the command
-                await generalTips(interaction, tipName); // Passing character name as an argument if needed
+                console.log(`Tip command received: ${interaction.commandName}`);
+                // If the command matches a tip, call the generalTips function
+                await generalTips(interaction, tipName);
             }
-        })
+        }
     }
 });
+
+
+
+// client.on('interactionCreate', async (interaction) => {
+//     if (interaction.isCommand()) {
+//         // Loop through all the character names in the JSON file
+//         Object.keys(characters).forEach(async (characterName) => {
+//             if (interaction.commandName === characterName) {
+//                 console.log(`Command received: ${interaction.commandName}`);
+//                 // If the command name matches a character, call the talentTree function to handle the command
+//                 await talentTree(interaction, characterName); // Passing character name as an argument if needed
+//             }
+//         });
+//         Object.keys(tips).forEach(async (tipName) => {
+//             if (interaction.commandName === tipName) {
+//                 console.log(`Command received: ${interaction.commandName}`);
+//                 // If the command name matches a character, call the talentTree function to handle the command
+//                 await generalTips(interaction, tipName); // Passing character name as an argument if needed
+//             }
+//         })
+//     }
+// });
 
 // Start the Express server (port 3000)
 const app = express();
