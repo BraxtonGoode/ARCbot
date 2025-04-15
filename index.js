@@ -1,6 +1,7 @@
 const { Client, Events, GatewayIntentBits, REST, Routes } = require("discord.js");
 const { commands, tipCommands } = require("./commandBuilder.js");
 const { talentTree } = require("./talentTrees.js"); // Import the talent tree function
+const { generalTips } = require("./tips.js"); // Import the tips function
 const express = require('express');
 require('dotenv').config();
 
@@ -17,6 +18,18 @@ try {
 
 if (!characters || Object.keys(characters).length === 0) {
     console.error('No characters data found.');
+}
+
+// read the tips JSON file
+let tips = {};
+try {
+    const data = fs.readFileSync('./tips.json', 'utf8');
+    tips = JSON.parse(data);
+} catch (err) {
+    console.error('Error reading tips.json:', err); 
+}
+if (!tips || Object.keys(tips).length === 0) {
+    console.error('No tips data found.');
 }
 
 
@@ -60,6 +73,13 @@ client.on('interactionCreate', async (interaction) => {
                 await talentTree(interaction, characterName); // Passing character name as an argument if needed
             }
         });
+        Object.keys(tips).forEach(async (tipName) => {
+            if (interaction.commandName === tipName.toLocaleLowerCase()) {
+                console.log(`Command received: ${interaction.commandName}`);
+                // If the command name matches a character, call the talentTree function to handle the command
+                await generalTips(interaction, tipName); // Passing character name as an argument if needed
+            }
+        })
     }
 });
 
