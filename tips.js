@@ -4,8 +4,19 @@ const fs = require('fs');
 // Read the tips JSON file once on startup (optimized)
 const tips = JSON.parse(fs.readFileSync('tips.json', 'utf8'));
 
-async function generalTips(interaction, tipName) {
-    console.log(`General tip for ${tipName}`);
+// Function to unsanitize the tip name (reverse the sanitization)
+function unsanitizeTipName(sanitizedName) {
+    // Revert sanitized name back to original form (e.g., "relocation-tip" -> "Relocation Tip")
+    return sanitizedName
+        .replace(/-/g, ' ') // Replace hyphens with spaces
+        .replace(/\b\w/g, char => char.toUpperCase()); // Capitalize the first letter of each word
+}
+
+async function generalTips(interaction, sanitizedTipName) {
+    console.log(`General tip for ${sanitizedTipName}`);
+
+    // Unsanitize the name to get the correct tip name
+    const tipName = unsanitizeTipName(sanitizedTipName);
 
     if (tips[tipName]) {
         const tip = tips[tipName];
@@ -30,3 +41,4 @@ async function generalTips(interaction, tipName) {
 }
 
 module.exports = { generalTips };
+
