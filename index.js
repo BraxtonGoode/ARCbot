@@ -73,11 +73,14 @@ client.on('interactionCreate', async (interaction) => {
         }
 
         // Handle tip commands
-        for (const tipName of Object.keys(tips)) {
-            console.log(`Tip command received: ${interaction.commandName}`);
-            if (interaction.commandName === tipName) {
+        for (const tip of Object.values(tips)) {
+            // Sanitize the command name for the comparison
+            const sanitizedTipName = tip.name.toLowerCase().replace(/\s+/g, "-");
+            
+            if (interaction.commandName === sanitizedTipName) {
+                console.log(`Tip command received: ${interaction.commandName}`);
                 // If the command matches a tip, call the generalTips function
-                await generalTips(interaction, tipName);
+                await generalTips(interaction, sanitizedTipName);
             }
         }
     }
