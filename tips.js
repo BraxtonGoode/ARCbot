@@ -1,4 +1,5 @@
 const { EmbedBuilder } = require("discord.js");
+const fs = require('fs');
 
 // Read the tips JSON file once on startup (optimized)
 const tips = JSON.parse(fs.readFileSync('tips.json', 'utf8'));
