@@ -74,11 +74,9 @@ client.on('interactionCreate', async (interaction) => {
 
         // Handle tip commands
         for (const tipName of Object.keys(tips)) {
-            if (interaction.commandName === tipName) {
-                console.log(`Tip command received: ${interaction.commandName}`);
-                // If the command matches a tip, call the generalTips function
-                await generalTips(interaction, tipName);
-            }
+            console.log(`Tip command received: ${interaction.commandName}`);
+            await interaction.reply("The tip command has been called! Here's a random tip: Stay hydrated! 💧");
+
         }
     }
 });
