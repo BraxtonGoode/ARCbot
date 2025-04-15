@@ -4,7 +4,7 @@ const fs = require('fs');
 const tips = JSON.parse(fs.readFileSync('tips.json', 'utf8'));
 
 async function generalTips(interaction, tipName) {
-    console.log(`Talent tree command received for ${tipName}`);
+    console.log(`general tip for ${tipName}`);
 
         if (tips[tipName]) {
             const tip = tips[tipName];
