@@ -29,7 +29,7 @@ client.once(Events.ClientReady, async (c) => {
         console.log('Registering slash commands...');
         
         // Flatten the arrays and ensure they are all in proper JSON format
-        const allCommands = [...commands, ...tipCommands];
+        const allCommands = [commands, tipCommands];
 
         // Check if the structure is as expected before sending
         console.log('Commands to register:', allCommands);
