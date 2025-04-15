@@ -74,7 +74,7 @@ client.on('interactionCreate', async (interaction) => {
             }
         });
         Object.keys(tips).forEach(async (tipName) => {
-            if (interaction.commandName === tipName.toLocaleLowerCase()) {
+            if (interaction.commandName === tipName) {
                 console.log(`Command received: ${interaction.commandName}`);
                 // If the command name matches a character, call the talentTree function to handle the command
                 await generalTips(interaction, tipName); // Passing character name as an argument if needed
