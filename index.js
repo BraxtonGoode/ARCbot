@@ -31,7 +31,7 @@ client.once(Events.ClientReady, async (c) => {
         await rest.put(
             Routes.applicationCommands(client.user.id), // Register global commands
             {
-                body: [commands, tipCommands].map(cmd => cmd.toJSON()), // Fix here
+                body: [commands, tipCommands], // Directly use commands and tipCommands
             }
         );
         console.log('Slash commands registered.');
@@ -39,6 +39,7 @@ client.once(Events.ClientReady, async (c) => {
         console.error('Error registering slash command:', err);
     }
 });
+
 
 
 client.on('interactionCreate', async (interaction) => {
