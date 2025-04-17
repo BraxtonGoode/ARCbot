@@ -20,3 +20,14 @@ Explore character talent trees, learn useful gameplay tips, and interact with yo
 /kyoshi talent-tree
 /zuko talent-tree
 /relocation-tip
+
+## ➕ Add ARCbot to Your Server
+
+To invite ARCbot to your own Discord server, click the link below:
+
+👉 [Invite ARCbot](https://discord.com/oauth2/authorize?client_id=1359674396007989369&permissions=277025445888&integration_type=0&scope=bot+applications.commands)
+
+## 🙌 Credits
+
+Created by @BraxtonGoode
+Inspired by the Game Avatar Realms Collide
