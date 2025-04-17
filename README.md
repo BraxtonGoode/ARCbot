@@ -21,6 +21,8 @@ Explore character talent trees, learn useful gameplay tips, and interact with yo
 /zuko talent-tree
 /relocation-tip
 
+```
+---
 ## ➕ Add ARCbot to Your Server
 
 To invite ARCbot to your own Discord server, click the link below:
