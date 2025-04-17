@@ -33,4 +33,5 @@ To invite ARCbot to your own Discord server, click the link below:
 ## 🙌 Credits
 
 Created by @BraxtonGoode
+
 Inspired by the Game Avatar Realms Collide
