@@ -29,6 +29,7 @@ To invite ARCbot to your own Discord server, click the link below:
 
 👉 [Invite ARCbot](https://discord.com/oauth2/authorize?client_id=1359674396007989369&permissions=277025445888&integration_type=0&scope=bot+applications.commands)
 
+
 ## 🙌 Credits
 
 Created by @BraxtonGoode
