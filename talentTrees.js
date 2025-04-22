@@ -5,13 +5,13 @@ const characters = JSON.parse(fs.readFileSync('characters.json', 'utf8'));
 
 async function talentTree(interaction, characterName) {
     console.log(`Talent tree command received for ${characterName}`);
-    
-    // Make the character name uppercase for both the interaction and the embed
-    const upperCaseCharacterName = characterName.toUpperCase();
+
+    // Convert characterName to lowercase to check against the JSON data
+    const lowerCaseCharacterName = characterName.toLowerCase();
 
     // Check if character exists in the JSON data
-    if (characters[upperCaseCharacterName]) {
-        const character = characters[upperCaseCharacterName];
+    if (characters[lowerCaseCharacterName]) {
+        const character = characters[lowerCaseCharacterName];
 
         const embed = new EmbedBuilder()
             .setColor(0x0099FF)
@@ -31,7 +31,7 @@ async function talentTree(interaction, characterName) {
 
         await interaction.reply({ embeds: [embed, embed2, embed3] });
     } else {
-        await interaction.reply(`Character "${upperCaseCharacterName}" not found.`);
+        await interaction.reply(`Character "${characterName}" not found.`);
     }
 }
 
