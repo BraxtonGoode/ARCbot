@@ -11,13 +11,13 @@ async function talentTree(interaction, characterName) {
 
         const embed = new EmbedBuilder()
             .setColor(0x0099FF)
-            .setTitle(character.name)
+            .setTitle(character.name.ToUpperCase())
             .setDescription(`Here is the first part of the talent tree for ${character.name}:`)
             .setImage(character.image1)  // Modify as needed to show the right image
 
             const embed2 = new EmbedBuilder()
             .setColor(0x0099FF)
-            .setTitle(character.name)
+            .setTitle(character.name.ToUpperCase())
             .setDescription(`Here is the second part of the talent tree for ${character.name}:`)
             .setImage(character.image2)  // Modify as needed to show the right image  
 
