@@ -23,7 +23,7 @@ async function talentTree(interaction, characterName) {
 
             const embed3 = new EmbedBuilder()
             .setColor(0x0099FF)
-            .setTitle("Talent trees are provided by Kuvira")
+            .setTitle("Talent trees are provided by Kuvira last updated on 22/4/2023 (dd/mm/yyyy)")
 
 
         await interaction.reply({ embeds: [embed, embed2, embed3] });
