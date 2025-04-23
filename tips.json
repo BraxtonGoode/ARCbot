@@ -12,8 +12,8 @@
     "name": "Hero Tier List",
     "Content": "https://cdn.discordapp.com/attachments/1364668061260447905/1364668064779468883/image.png?ex=680a81ac&is=6809302c&hm=0bafc119df4e57e9fcdca49a3f132d4981aca5e1a9c2ca6c3f9551e3723df3a3&"
   },
-  "How to use": {
-    "name": "How to use",
+  "How To Use": {
+    "name": "How To Use",
     "Content": "How to Use ARCbot:\n\nARCbot is designed to assist you with various gameplay tips and character guides for your game. To get started, use the /tip <tip-name> command to access general gameplay tips. For example, if you're interested in learning how to relocate your city, you can use /tip relocation-tip. Each tip provides helpful instructions to enhance your experience. You can also explore character-specific talent trees with commands like /kyoshi talent-tree, /zuko talent-tree, /korra talent-tree, and more, where you'll receive information about the character's skill paths. Many of the tips come with a \"Pro Tip\" section to provide additional expert advice. Additionally, some tips include images for better understanding, which will be displayed directly in the embed. If you encounter any issues or have questions, feel free to ask a moderator or double-check the command name. Stay connected and keep exploring to make the most of your time in the game!"
   }
 }
