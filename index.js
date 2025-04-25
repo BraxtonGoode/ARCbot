@@ -2,6 +2,7 @@ const { Client, Events, GatewayIntentBits, REST, Routes } = require("discord.js"
 const { commands, tipCommands, all } = require("./commandBuilder.js");
 const { talentTree } = require("./talentTrees.js"); // Import the talent tree function
 const { generalTips } = require("./tips.js"); // Import the tips function
+const { displayCommands } = require("./allCommands.js"); // Import the display commands function
 const express = require('express');
 require('dotenv').config();
 
@@ -83,18 +84,8 @@ client.on('interactionCreate', async (interaction) => {
                 await generalTips(interaction, sanitizedTipName);
             }
         }
-        if (commandName === "all") {
-            const characterList = Object.keys(characters)
-                .map(name => `• \`/${name.toLowerCase()} talent-tree\``)
-                .join("\n");
-    
-            const tipList = Object.values(tips)
-                .map(tip => `• \`/${tip.name.toLowerCase().replace(/\s+/g, "-")}\``)
-                .join("\n");
-    
-            const response = `🧙‍♂️ **Character Commands:**\n${characterList || "_None found_"}\n\n📘 **Tip Commands:**\n${tipList || "_None found_"}`;
-    
-            await interaction.reply({ content: response, ephemeral: true }); // Optional: make it private
+        if (interaction.commandName === "all") {
+            await displayCommands(interaction);
         }
     }
 });
