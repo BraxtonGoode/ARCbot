@@ -83,6 +83,19 @@ client.on('interactionCreate', async (interaction) => {
                 await generalTips(interaction, sanitizedTipName);
             }
         }
+        if (commandName === "all") {
+            const characterList = Object.keys(characters)
+                .map(name => `• \`/${name.toLowerCase()} talent-tree\``)
+                .join("\n");
+    
+            const tipList = Object.values(tips)
+                .map(tip => `• \`/${tip.name.toLowerCase().replace(/\s+/g, "-")}\``)
+                .join("\n");
+    
+            const response = `🧙‍♂️ **Character Commands:**\n${characterList || "_None found_"}\n\n📘 **Tip Commands:**\n${tipList || "_None found_"}`;
+    
+            await interaction.reply({ content: response, ephemeral: true }); // Optional: make it private
+        }
     }
 });
 

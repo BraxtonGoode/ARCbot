@@ -37,4 +37,10 @@ const tipCommands = Object.values(tips).map((tip) => {
         .toJSON();
 }).filter(cmd => cmd); // Filter out any undefined or empty commands
 
-module.exports = { commands, tipCommands };
+const allCommands = new SlashCommandBuilder()
+    .setName("all")
+    .setDescription("Display all available character and tip commands.")
+    .toJSON();
+
+
+module.exports = { commands, tipCommands, allCommands };
