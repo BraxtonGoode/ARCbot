@@ -1,5 +1,5 @@
 const { Client, Events, GatewayIntentBits, REST, Routes } = require("discord.js");
-const { commands, tipCommands } = require("./commandBuilder.js");
+const { commands, tipCommands, all } = require("./commandBuilder.js");
 const { talentTree } = require("./talentTrees.js"); // Import the talent tree function
 const { generalTips } = require("./tips.js"); // Import the tips function
 const express = require('express');
@@ -42,7 +42,7 @@ client.once(Events.ClientReady, async (c) => {
         console.log('Registering slash commands...');
         
         // Flatten the arrays and ensure they are all in proper JSON format
-        const allCommands = [commands, tipCommands].flat();
+        const allCommands = [commands, tipCommands, all].flat();
 
         // Check if the structure is as expected before sending
         console.log('Commands to register:', allCommands);
