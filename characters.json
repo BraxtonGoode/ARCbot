@@ -93,5 +93,10 @@
     "name": "yue",
     "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363961007520878602/IMG_5904.jpg?ex=680897ed&is=6807466d&hm=ed10ee88611c2d1d7772e02e5e3ba9f28b937c177aaf072d509b4c2fc418fa59&format=webp&width=1340&height=620&",
     "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363961021823320235/IMG_5905.jpg?ex=680897f0&is=68074670&hm=d2e4de1a197122638eb642c7218a0f795b2193ac9a87e0a84e417973a5696e47&format=webp&width=1340&height=620&"
+  },
+  "amon": {
+    "name": "amon",
+    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1369080716905812028/IMG_6199.png?ex=681a8f47&is=68193dc7&hm=21b174fe11a92a61f0342591ef6b34485a36afdbbad7e4140e023409264a8ac4&",
+    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1369080807079149580/IMG_6200.png?ex=681a8f5c&is=68193ddc&hm=fda75ca03fbd74db8a72c7fa33f09f895ddc1fe67bb38702464e87792b04924a&"
   }
 }
