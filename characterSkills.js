@@ -17,8 +17,11 @@ async function skills(interaction, characterName) {
             .setColor(0x0099FF)
             .setTitle(character.name.toUpperCase()) // Uppercase the character's name for the embed title
             .setDescription(`This is the order of skills for ${character.name.toUpperCase()}:`)
-            .setImage(character.skills);  // Modify as needed to show the right image
-
+            .addFields({
+            name: 'Skills',
+            value: character.skills.join('\n'),
+            })
+            
         const embed2 = new EmbedBuilder()
             .setColor(0x0099FF)
             .setTitle("Skills are provided by Kuvira last updated on 15/5/2025 (dd/mm/yyyy)");
