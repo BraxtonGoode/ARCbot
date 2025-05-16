@@ -33,7 +33,7 @@ const commands = Object.keys(characters)
       )
       .addSubcommand((subcommand) =>
         subcommand
-          .setName('Skills')
+          .setName('skills')
           .setDescription(
             `View ${name.charAt(0).toUpperCase() + name.slice(1)}'s skills`
           )
