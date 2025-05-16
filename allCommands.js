@@ -12,9 +12,15 @@ async function displayCommands(interaction) {
         .map(name => `• \`/${name.toLowerCase()} talent-tree\``)
         .join("\n") || "No character commands available.";
 
+    const listOfSkills = Object.keys(characters)
+        .map(name => `• \`/${name.toLowerCase()} skills\``)
+        .join("\n") || "No skill commands available.";
+
     const listOfTips = Object.keys(tips)
         .map(name => `• \`/${name.toLowerCase().replace(/\s+/g, "-")}\``)
         .join("\n") || "No tip commands available.";
+
+    
 
     const embed = new EmbedBuilder()
         .setColor(0x0099FF)
@@ -22,6 +28,7 @@ async function displayCommands(interaction) {
         .setDescription("Use these slash commands to interact with the bot:")
         .addFields(
             { name: "👤 Character Commands", value: listOfCharacters, inline: false },
+            { name: "🛠️ Skills Commands", value: listOfSkills, inline: false },
             { name: "💡 Tip Commands", value: listOfTips, inline: false }
         )
         .setFooter({ text: "Use /[command] to get started!" });

@@ -2,7 +2,13 @@
   "kyoshi": {
     "name": "kyoshi",
     "image1": "https://media.discordapp.net/attachments/1352072141415120989/1363959407276462080/IMG_5890.PNG?ex=6808966f&is=680744ef&hm=59f61d3bb8102d6e3c183c669bba44ba6c7bf9099866bad2876391e19a45c75a&format=webp&quality=lossless&width=2754&height=1272&",
-    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363960925601796276/IMG_5891.PNG?ex=680897d9&is=68074659&hm=98f08e5fc0fb541ebd3c120516de67e821dd7786f1426530fba318bb35ee0b98&format=webp&quality=lossless&width=1340&height=620&"
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363960925601796276/IMG_5891.PNG?ex=680897d9&is=68074659&hm=98f08e5fc0fb541ebd3c120516de67e821dd7786f1426530fba318bb35ee0b98&format=webp&quality=lossless&width=1340&height=620&",
+    "skills": [
+      "Justice & Punishment",
+      "Meaning of Tears",
+      "Kyoshi War Fans",
+      "Tallest"
+    ]
   },
   "sokka": {
     "name": "Sokka",

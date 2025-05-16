@@ -22,6 +22,10 @@ def save_character():
     name = name_entry.get().strip()
     img1 = img1_entry.get().strip()
     img2 = img2_entry.get().strip()
+    skills = skills_entry.get().strip()
+    skill_list = [s.strip() for s in skills.split(",")] if skills else []
+
+
 
     if not name or not img1 or not img2:
         messagebox.showwarning("Missing Info", "Please fill out all fields.")
@@ -30,8 +34,10 @@ def save_character():
     characters[name.lower()] = {
         "name": name,
         "image1": img1,
-        "image2": img2
+        "image2": img2,
+        "skills": skill_list
     }
+
     save_characters(characters)
     messagebox.showinfo("Saved", f"Character '{name}' has been saved.")
     update_dropdown()
@@ -48,6 +54,8 @@ def load_selected_character(event):
         img1_entry.insert(0, char_data["image1"])
         img2_entry.delete(0, tk.END)
         img2_entry.insert(0, char_data["image2"])
+        skills_entry.delete(0, tk.END)
+        skills_entry.insert(0, ", ".join(char_data.get("skills", [])))
 
 # Update dropdown menu options
 def update_dropdown():
@@ -61,6 +69,7 @@ def clear_fields():
     name_entry.delete(0, tk.END)
     img1_entry.delete(0, tk.END)
     img2_entry.delete(0, tk.END)
+    skills_entry.delete(0, tk.END)
 
 # Initialize window
 characters = load_characters()
@@ -86,9 +95,13 @@ tk.Label(root, text="Image 2 URL:").grid(row=3, column=0, sticky='w')
 img2_entry = tk.Entry(root, width=50)
 img2_entry.grid(row=3, column=1, columnspan=2)
 
+tk.Label(root, text="Skills (Comma-separated):").grid(row=4, column=0, sticky='w')
+skills_entry = tk.Entry(root, width=50)
+skills_entry.grid(row=4, column=1, columnspan=2)
+
 # Buttons
-tk.Button(root, text="Save Character", command=save_character).grid(row=4, column=1, sticky='e')
-tk.Button(root, text="Clear Fields", command=clear_fields).grid(row=4, column=2, sticky='w')
+tk.Button(root, text="Save Character", command=save_character).grid(row=5, column=1, sticky='e')
+tk.Button(root, text="Clear Fields", command=clear_fields).grid(row=5, column=2, sticky='w')
 
 update_dropdown()
 root.mainloop()

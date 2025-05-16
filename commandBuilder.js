@@ -1,46 +1,60 @@
-const { SlashCommandBuilder } = require("discord.js");
-const fs = require("fs");
+const { SlashCommandBuilder } = require('discord.js');
+const fs = require('fs');
 
 // Read character names from JSON, ensure data is properly loaded
 let characters = {};
 try {
-    characters = JSON.parse(fs.readFileSync("./characters.json", "utf8"));
+  characters = JSON.parse(fs.readFileSync('./characters.json', 'utf8'));
 } catch (err) {
-    console.error("Error reading characters.json:", err);
+  console.error('Error reading characters.json:', err);
 }
 
 let tips = {};
 try {
-    tips = JSON.parse(fs.readFileSync("./tips.json", "utf8"));
+  tips = JSON.parse(fs.readFileSync('./tips.json', 'utf8'));
 } catch (err) {
-    console.error("Error reading tips.json:", err);
+  console.error('Error reading tips.json:', err);
 }
 
 // Generate commands for each character if they exist
-const commands = Object.keys(characters).map((name) => {
+const commands = Object.keys(characters)
+  .map((name) => {
     return new SlashCommandBuilder()
-        .setName(name.toLowerCase())
-        .setDescription(`Interact with ${name.charAt(0).toUpperCase() + name.slice(1)}!`)
-        .addSubcommand(subcommand =>
-            subcommand
-                .setName("talent-tree")
-                .setDescription(`View ${name.charAt(0).toUpperCase() + name.slice(1)}'s talent tree`)
-        )
-        .toJSON();
-}).filter(cmd => cmd); // Filter out any undefined or empty commands
+      .setName(name.toLowerCase())
+      .setDescription(
+        `Interact with ${name.charAt(0).toUpperCase() + name.slice(1)}!`
+      )
+      .addSubcommand((subcommand) =>
+        subcommand
+          .setName('talent-tree')
+          .setDescription(
+            `View ${name.charAt(0).toUpperCase() + name.slice(1)}'s talent tree`
+          )
+      )
+      .addSubcommand((subcommand) =>
+        subcommand
+          .setName('Skills')
+          .setDescription(
+            `View ${name.charAt(0).toUpperCase() + name.slice(1)}'s skills`
+          )
+      )
+      .toJSON();
+  })
+  .filter((cmd) => cmd); // Filter out any undefined or empty commands
 
 // Create one slash command for each tip entry if tips exist
-const tipCommands = Object.values(tips).map((tip) => {
+const tipCommands = Object.values(tips)
+  .map((tip) => {
     return new SlashCommandBuilder()
-        .setName(tip.name.toLowerCase().replace(/\s+/g, "-")) // Sanitize the tip name
-        .setDescription(`Get the ${tip.name} tip!`)
-        .toJSON();
-}).filter(cmd => cmd); // Filter out any undefined or empty commands
+      .setName(tip.name.toLowerCase().replace(/\s+/g, '-')) // Sanitize the tip name
+      .setDescription(`Get the ${tip.name} tip!`)
+      .toJSON();
+  })
+  .filter((cmd) => cmd); // Filter out any undefined or empty commands
 
 const all = new SlashCommandBuilder()
-    .setName("all")
-    .setDescription("Display all available character and tip commands.")
-    .toJSON();
-
+  .setName('all')
+  .setDescription('Display all available character and tip commands.')
+  .toJSON();
 
 module.exports = { commands, tipCommands, all };

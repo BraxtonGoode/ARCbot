@@ -3,6 +3,7 @@ const { commands, tipCommands, all } = require("./commandBuilder.js");
 const { talentTree } = require("./talentTrees.js"); // Import the talent tree function
 const { generalTips } = require("./tips.js"); // Import the tips function
 const { displayCommands } = require("./allCommands.js"); // Import the display commands function
+const { skills } = require("./characterSkills.js"); // Import the skills function
 const express = require('express');
 require('dotenv').config();
 
@@ -64,13 +65,30 @@ client.once(Events.ClientReady, async (c) => {
 
 client.on('interactionCreate', async (interaction) => {
     if (interaction.isCommand()) {
-        // Handle character commands
-        for (const characterName of Object.keys(characters)) {
-            if (interaction.commandName === characterName) {
-                console.log(`Character command received: ${interaction.commandName}`);
-                // If the command matches a character, call the talentTree function
-                await talentTree(interaction, characterName);
+        const commandName = interaction.commandName
+
+        // // Handle character commands
+        // for (const characterName of Object.keys(characters)) {
+        //     if (interaction.commandName === characterName) {
+        //         console.log(`Character command received: ${interaction.commandName}`);
+        //         // If the command matches a character, call the talentTree function
+        //         await talentTree(interaction, characterName);
+        //     }
+        // }
+
+        // Handle character subcommands
+        if (Object.keys(characters).includes(commandName)) {
+            const sub = interaction.options.getSubcommand();
+            console.log(`Character command: ${commandName}, subcommand: ${sub}`);
+
+            if (sub === 'talent-tree') {
+                await talentTree(interaction, commandName);
+            } else if (sub === 'skills') {
+                await skills(interaction, commandName);
+            } else {
+                await interaction.reply({ content: "Unknown subcommand.", ephemeral: true });
             }
+            return;
         }
 
         // Handle tip commands
