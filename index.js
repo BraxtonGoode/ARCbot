@@ -15,6 +15,7 @@ require('dotenv').config();
 
 const fs = require('fs');
 
+
 // Read the characters JSON file
 let characters = {};
 try {
@@ -39,6 +40,16 @@ try {
 if (!tips || Object.keys(tips).length === 0) {
   console.error('No tips data found.');
 }
+
+// check if any problems then logs it on railway
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught Exception:', err);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+});
+
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 client.once(Events.ClientReady, async (c) => {
