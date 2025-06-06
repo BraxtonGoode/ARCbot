@@ -137,4 +137,4 @@ app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
 
-client.login(process.env.TOKEN);
+client.login(process.env.TEST_TOKEN);
