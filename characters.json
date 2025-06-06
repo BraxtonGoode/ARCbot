@@ -214,7 +214,10 @@
     "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1369080716905812028/IMG_6199.png?ex=681a8f47&is=68193dc7&hm=21b174fe11a92a61f0342591ef6b34485a36afdbbad7e4140e023409264a8ac4&",
     "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1369080807079149580/IMG_6200.png?ex=681a8f5c&is=68193ddc&hm=fda75ca03fbd74db8a72c7fa33f09f895ddc1fe67bb38702464e87792b04924a&",
     "skills": [
-      "Still in the works"
+      "Orator",
+      "chi-blocking",
+      "Bloodbending",
+      "Conflict"
     ]
   },
   "king_bumi": {
@@ -222,7 +225,21 @@
     "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1369776076200607974/IMG_6312.png?ex=681d16e1&is=681bc561&hm=f076ff8cfc2a010cb5cdd569a6f5dd00448dc6fd2c7f4e7df564326b3bfca74d&",
     "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1369776136263045190/IMG_6313.png?ex=681d16f0&is=681bc570&hm=e523770b2bf483a48daa9bd3ff2085081d3393c3d840e2bbea843b0cd5d7d91b&",
     "skills": [
-      "Still in the works"
+      "Wave of Earth",
+      "Genomite Ring",
+      "Power of Earth",
+      "King of Omashu"
+    ]
+  },
+  "yangchen": {
+    "name": "yangchen",
+    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1377733160900628600/IMG_6663.png?ex=6843ecbe&is=68429b3e&hm=3eb1ec10b9c60dcd650a0d570f7691ae5875a9d0b99e3b30c41547722bad57d5&",
+    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1377733228223397968/IMG_6664.png?ex=6843ecce&is=68429b4e&hm=939623bf4043eb26125e7274a04887e7dc84b9565239173102f179d110f088ec&",
+    "skills": [
+      "Air Sphere",
+      "Cyclone Strike",
+      "Gale",
+      "Hurricane"
     ]
   }
 }
