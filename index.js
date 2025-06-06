@@ -83,15 +83,6 @@ client.on('interactionCreate', async (interaction) => {
     try {
       const commandName = interaction.commandName;
 
-      // // Handle character commands
-      // for (const characterName of Object.keys(characters)) {
-      //     if (interaction.commandName === characterName) {
-      //         console.log(`Character command received: ${interaction.commandName}`);
-      //         // If the command matches a character, call the talentTree function
-      //         await talentTree(interaction, characterName);
-      //     }
-      // }
-
       // Handle character subcommands
       if (Object.keys(characters).includes(commandName)) {
         const sub = interaction.options.getSubcommand();
