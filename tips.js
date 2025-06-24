@@ -34,16 +34,22 @@ async function generalTips(interaction, sanitizedTipName) {
         const tip = tips[tipName];
         const embed = new EmbedBuilder().setColor(0x0099FF).setTitle(tip.name);
 
-        // Decide whether to use setImage or setDescription
+        // Decide whether to use setImage or setDescription for the main content
         if (isProbablyImage(tip.Content)) {
             embed.setImage(cleanImageURL(tip.Content));
         } else {
             embed.setDescription(tip.Content);
         }
 
-        // Add Pro Tip if available
+        // Add Pro Tip if available, check if it's an image URL
         if (tip["Pro Tip"]) {
-            embed.addFields({ name: 'Pro Tip', value: tip["Pro Tip"], inline: false });
+            const proTipContent = tip["Pro Tip"];
+            if (isProbablyImage(proTipContent)) {
+                embed.addFields({ name: 'Pro Tip', value: '\u200B', inline: false }); // Empty value to only show the image
+                embed.setImage(cleanImageURL(proTipContent));  // Set the image as Pro Tip
+            } else {
+                embed.addFields({ name: 'Pro Tip', value: proTipContent, inline: false });
+            }
         }
 
         await interaction.reply({ embeds: [embed] });
@@ -53,3 +59,4 @@ async function generalTips(interaction, sanitizedTipName) {
 }
 
 module.exports = { generalTips };
+
