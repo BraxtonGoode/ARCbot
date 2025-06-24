@@ -50,6 +50,11 @@ process.on('unhandledRejection', (reason, promise) => {
   console.error('Unhandled Rejection at:', promise, 'reason:', reason);
 });
 
+// Check if the token is provided
+if (!process.env.TEST_TOKEN) {
+  console.error('Bot token is missing or invalid!');
+  process.exit(1); // Exit the program with error code
+}
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 client.once(Events.ClientReady, async (c) => {
@@ -137,4 +142,8 @@ app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
 
-client.login(process.env.TEST_TOKEN);
+// Log in with the bot token, using the token from environment variables
+client.login(process.env.TEST_TOKEN).catch((err) => {
+  console.error('Failed to log in:', err);
+  process.exit(1); // Exit if login fails
+});
