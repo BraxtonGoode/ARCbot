@@ -56,10 +56,19 @@ if (!process.env.TEST_TOKEN) {
   process.exit(1); // Exit the program with error code
 }
 
+// Log the token to verify it is loaded correctly
+console.log('Bot token:', process.env.TEST_TOKEN);
+
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 client.once(Events.ClientReady, async (c) => {
   console.log(`Logged in as ${c.user.username}`);
-  const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
+
+  // Only register commands if the token is available
+  if (!process.env.TEST_TOKEN) {
+    console.error('No token available during bot startup');
+    return;
+  }
+  const rest = new REST({ version: '10' }).setToken(process.env.TEST_TOKEN);
 
   try {
     console.log('Registering slash commands...');
