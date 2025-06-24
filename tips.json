@@ -16,9 +16,24 @@
     "name": "How To Use",
     "Content": "🚀 How to Use ARCbot:\n\nWelcome to ARCbot, your trusty guide to mastering the game! Ready to level up? Here's how:\n\nGet Gameplay Tips: Use /tip <tip-name> to discover valuable tips for your journey. For example, type **/tip relocation-tip** to learn how to move your city! 🏙️\n\nExplore Character Talent Trees: Want to know more about your favorite characters? Try commands like **/kyoshi talent-tree**, **/zuko talent-tree**, and **/korra talent-tree** to dive into their skill trees and unlock their potential! 🌟\n\n🔍 Explore Character Skills!\nCurious about your favorite characters? Discover their unique abilities by using commands like: **/kyoshi skills**, **/zuko skills**, **/korra skills** — and more! Uncover their full potential and master their skills.\n\nPro Tips & More: Many tips come with bonus \"Pro Tips\" to give you that extra edge. Plus, some include images to help you visualize key concepts. 📸\n\nSimply use these commands, and you're all set to become a game master! 🎮 Need help? Just ask, and we’ll guide you!"
   },
-  "Stay Active Tip": {
-    "name": "Stay Active Tip",
+  "#1 Stay Active Tip": {
+    "name": "#1 Stay Active Tip",
     "Content": "Time for a Pro-Player TIP #1 from Marshmallow\n\n🔧 Don't let anything sit idle!\n\nKeep your builders 👷, research lab 🧪, and tunnel 🚇 constantly working to maintain your growth 📈.\n\nAlways send out gatherers 🌾 (unless you're in the middle of a war ⚔️), as well as expeditions 🌍 and airships ✈️.\n\nPlan ahead so nothing goes unused.\n\nHard work always pays off! 💪💥",
     "Pro Tip": "https://cdn.discordapp.com/attachments/1208419763861200997/1371225025201311916/ARC_554_Youtube_Thumbnail_1280x720_v2_HOW.jpg?ex=685b0cd2&is=6859bb52&hm=f28059ee302af9258ad16ae15be5219da54022a69ba966bed66a47934a62b04b&"
+  },
+  "#2 Join An Active Alliance Tip": {
+    "name": "#2 Join An Active Alliance Tip",
+    "Content": "Pro Tip from kuvira : Join an active and productive alliance!\n\nChoosing the right alliance makes a world of difference in Avatar Legends: Realms Collide. Here’s why:\n\n🔹 Faster Growth: Get support from teammates to speed up construction and research. 📈\n🔹 Stronger Rallies: Have allies ready to join your rallies and crush your enemies together. 🤜🤛\n🔹 Epic Invasions: Fight side by side in invasions and conquer the battlefield. ⚔️\n\nDon’t let a slow alliance hold you back – choose wisely and rise to the top!",
+    "Pro Tip": "https://cdn.discordapp.com/attachments/1208419763861200997/1374054683081052160/ARC_554_Youtube_Thumbnail_1280x720_v2_DEVELOPER.jpg?ex=685acc25&is=68597aa5&hm=7dfd9c63d6b2425a0e10a941b8850725963d2486aeb8950f7b5879f43f636c42&"
+  },
+  "#4 Priortize the Right Heroes Tip": {
+    "name": "#4 Priortize the Right Heroes Tip",
+    "Content": "Pro-Player TIP #2 by Kuvira 🛡!\n🎯 Prioritize the Right Heroes\n\nIn Avatar Legends: Realms Collide, choosing the right heroes to invest in is critical. 🚨\nPicking the wrong ones can leave you falling behind—especially against top spenders 💸 or well-informed players.\n\n🔍 Need help?\nJoin the official Discord to find guides and expert advice on smart hero choices and long-term strategy.\n\nStay sharp. Build smart. Dominate the battlefield. 🧠⚔️",
+    "Pro Tip": "https://cdn.discordapp.com/attachments/1208419763861200997/1379464653783957604/ARC_554_Youtube_Thumbnail_1280x720_v2_DEVELOPER.jpg?ex=685ab412&is=68596292&hm=1790f71c6893ca0b03a15918add49e49aca4e9456ac608afbfa11e11631a4bf1&"
+  },
+  "#5 Extra Outside Effort Tip": {
+    "name": "#5 Extra Outside Effort Tip",
+    "Content": "Pro-Player TIP #3 by Marshmallow 🔥!\nExtra effort outside the game makes a big difference!\n\n📲 Set alarms to remind yourself when to:\n— Send gatherers 🌾\n— Launch expeditions 🌍\n— Use key resources 🧪\n\n📊 Create a simple Google Sheet or Excel to track your items, speedups, and event prep.\nThe more you plan, the faster you grow! 📈\n\nThere’s nothing wrong with being diligent and passionate about the things you love ❤️",
+    "Pro Tip": "https://cdn.discordapp.com/attachments/1208419763861200997/1381920551878135880/ARC_554_Youtube_Thumbnail_1280x720_v2_HOW.jpg?ex=685b118e&is=6859c00e&hm=671cd8bd73e27b1bace8afaafba034d4a661c4b18f95e0495a3b81d23ae555a3&"
   }
 }
