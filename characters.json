@@ -214,10 +214,10 @@
     "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1369080716905812028/IMG_6199.png?ex=685b28c7&is=6859d747&hm=fae5214f2f25a68271c4388cc6f560ba3a57bf4e40dbe26b7e7ae0906c8993c5&",
     "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1369080807079149580/IMG_6200.png?ex=685b28dc&is=6859d75c&hm=8306f575b660ea18634d37696d95bb29be1c3dd1e70788f5ce826fbaa7a7d3b6&",
     "skills": [
-      "Orator",
-      "chi-blocking",
       "Bloodbending",
-      "Conflict"
+      "Orator",
+      "Chi-blocking",
+      "conflict"
     ]
   },
   "king_bumi": {
@@ -242,17 +242,6 @@
       "Hurricane"
     ]
   },
-  "painted_lady": {
-    "name": "painted_lady",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1386870408086818976/image.png?ex=685b4738&is=6859f5b8&hm=f577db2debab1c0ae0b46f71478ad9d91cbc2591bc16869d0e51d544025cc7fb&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1386870477217075200/image.png?ex=685b4748&is=6859f5c8&hm=16ae01ae1d677eaa107ff0710fd95c39e354b2b37673e710b00304383e15e6b7&",
-    "skills": [
-      "Shifting Flows",
-      "Raging Wave",
-      "Healing Wave",
-      "Ice Pillar"
-    ]
-  },
   "painted_lady_kattara": {
     "name": "painted_lady_kattara",
     "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1386870408086818976/image.png?ex=685b4738&is=6859f5b8&hm=f577db2debab1c0ae0b46f71478ad9d91cbc2591bc16869d0e51d544025cc7fb&",
@@ -262,6 +251,17 @@
       "Raging Wave",
       "Healing Wave",
       "Ice Pillar"
+    ]
+  },
+  "unalaq": {
+    "name": "unalaq",
+    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1387861771800543284/image.png?ex=685ee27f&is=685d90ff&hm=5f0d521fc5cbe7abe3231f985aa378fc03b120335a5a7b38909d7d2ee407424a&",
+    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1387861838317883392/image.png?ex=685ee28f&is=685d910f&hm=a579775aa9fb1293c1cff171aa9f0819f0e036b7e5ef92b43c5312f2a555c829&",
+    "skills": [
+      "Soul Destruction",
+      "Tree of Time",
+      "Ice Drill",
+      "Energy Conversion"
     ]
   }
 }
