@@ -50,25 +50,25 @@ process.on('unhandledRejection', (reason, promise) => {
   console.error('Unhandled Rejection at:', promise, 'reason:', reason);
 });
 
-// Check if the token is provided
-if (!process.env.TOKEN) {
-  console.error('Bot token is missing or invalid!');
+// Check if the TEST_TOKEN is provided
+if (!process.env.TEST_TOKEN) {
+  console.error('Bot TEST_TOKEN is missing or invalid!');
   process.exit(1); // Exit the program with error code
 }
 
-// Log the token to verify it is loaded correctly
-console.log('Bot token:', process.env.TOKEN);
+// Log the TEST_TOKEN to verify it is loaded correctly
+console.log('Bot TEST_TOKEN:', process.env.TEST_TOKEN);
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 client.once(Events.ClientReady, async (c) => {
   console.log(`Logged in as ${c.user.username}`);
 
-  // Only register commands if the token is available
-  if (!process.env.TOKEN) {
-    console.error('No token available during bot startup');
+  // Only register commands if the TEST_TOKEN is available
+  if (!process.env.TEST_TOKEN) {
+    console.error('No TEST_TOKEN available during bot startup');
     return;
   }
-  const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
+  const rest = new REST({ version: '10' }).setTEST_TOKEN(process.env.TEST_TOKEN);
 
   try {
     console.log('Registering slash commands...');
@@ -151,8 +151,8 @@ app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
 
-// Log in with the bot token, using the token from environment variables
-client.login(process.env.TOKEN).catch((err) => {
+// Log in with the bot TEST_TOKEN, using the TEST_TOKEN from environment variables
+client.login(process.env.TEST_TOKEN).catch((err) => {
   console.error('Failed to log in:', err);
   process.exit(1); // Exit if login fails
 });
