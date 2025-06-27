@@ -24,7 +24,7 @@ async function skills(interaction, characterName) {
 
       const embed2 = new EmbedBuilder()
         .setColor(0x0099FF)
-        .setTitle("Skills are provided by Kuvira last updated on 6/6/2025 (dd/mm/yyyy)");
+        .setTitle("Skills are provided by Kuvira last updated on 27/6/2025 (dd/mm/yyyy)");
 
       await interaction.reply({ embeds: [embed, embed2] });
     } else {
