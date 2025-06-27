@@ -68,7 +68,7 @@ client.once(Events.ClientReady, async (c) => {
     console.error('No TEST_TOKEN available during bot startup');
     return;
   }
-  const rest = new REST({ version: '10' }).setTEST_TOKEN(process.env.TEST_TOKEN);
+  const rest = new REST({ version: '10' }).setToken(process.env.TEST_TOKEN);
 
   try {
     console.log('Registering slash commands...');
