@@ -1,8 +1,8 @@
 {
   "kyoshi": {
     "name": "kyoshi",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1364292344253251614/IMG_5890.png?ex=685ae0c2&is=68598f42&hm=a978525be76f30b6a3824d9bd241d3b19863e1ead6c06b20a92d313a53f6ea2d&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1364292461303959602/IMG_5891.png?ex=685ae0de&is=68598f5e&hm=8d5f1d1da8764b31fda766f65f8d86253aec6b38bf3edf39ebf20de987b9bc47&",
+    "image1": "https://media.discordapp.net/attachments/1352072141415120989/1363959407276462080/IMG_5890.PNG?ex=685f996f&is=685e47ef&hm=92038e671c59b9a24a928a10b94cf320237e5ac73787b43222c7d95553a43c0b&format=webp&quality=lossless&width=2754&height=1272&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363960925601796276/IMG_5891.PNG?ex=685f9ad9&is=685e4959&hm=5a66ff14810c346711315dfe63d9c6bc5acab8a69df00885ac7f517a73a433ce&format=webp&quality=lossless&width=1340&height=620&",
     "skills": [
       "Justice & Punishment",
       "Meaning of Tears",
@@ -12,8 +12,8 @@
   },
   "sokka": {
     "name": "Sokka",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1360029402724831405/IMG_5158.png?ex=685b3095&is=6859df15&hm=d7d34a16c32dd384f63b8eef5ed49bd4fa79ec24f4b6cd92a864e409a795ef4c&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1360029508488532140/IMG_5159.png?ex=685b30ae&is=6859df2e&hm=89aa0a62ce288da1b17eaae329ff87949fbdf57b35370d8f70164509492e8906&",
+    "image1": "https://cdn.discordapp.com/attachments/1363959600054796468/1363959782368870450/IMG_5158.jpg?ex=685f99c9&is=685e4849&hm=08d356613d36f2b7641e34299c6cee34a426bff0958395698233a8c2133f4d70&format=webp&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363959797292208288/IMG_5159.jpg?ex=685f99cc&is=685e484c&hm=af783b6ce08f722ddfddd4bd19fc8ab2055877d110ecae08a9cecc4bf8824362&format=webp&width=1340&height=620&",
     "skills": [
       "Hawky",
       "Yeah boomerang",
@@ -23,8 +23,8 @@
   },
   "tenzin": {
     "name": "tenzin",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1360029863821443172/IMG_5245.png?ex=685b3103&is=6859df83&hm=89a41a723399e93bd049ac1423d0fe799875ffaf6404f1f609d3ddf258d3ae8b&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1360029931442278541/IMG_5246.png?ex=685b3113&is=6859df93&hm=c1a3a3988e71f37e1ae62e0c7d3f4305c157cfe1a3622f17106f2c4c676f9748&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363959921418174464/IMG_5245.jpg?ex=685f99ea&is=685e486a&hm=40f01ae04fa816ba2ba26ceee4dcbacfe623d1d93cfd6c42f3b7d6071f081807&format=webp&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363959934386962543/IMG_5246.jpg?ex=685f99ed&is=685e486d&hm=9b7fe4c5934907e5bb594621f7122094220a4485ab3706dc416f76ab0041c2ea&format=webp&width=1340&height=620&",
     "skills": [
       "Awareness",
       "Oogi",
@@ -34,8 +34,8 @@
   },
   "korra": {
     "name": "korra",
-    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363960094970085508/IMG_5882.jpg?ex=68089713&is=68074593&hm=5f5349f43159b79bff81b72d795aeb61d81d642dc2242a35adb21b0f9043501c&format=webp&width=1340&height=620&",
-    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363960105766490262/IMG_5883.jpg?ex=68089716&is=68074596&hm=116b76245777a25dc60622b6ab27d9ee69f822a4e0d2ce03abc3ac5bd8e9ed76&format=webp&width=1340&height=620&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363960094970085508/IMG_5882.jpg?ex=685f9a13&is=685e4893&hm=ffe5fd4c9f3c99e985b3414f2e2f7c49e1e60cd6c8c45d141d3d2c76ddf1977f&format=webp&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363960105766490262/IMG_5883.jpg?ex=685f9a16&is=685e4896&hm=137fe89208395d5859c3cc501164601405611e2d59a486b5fc720f07155f9d6b&format=webp&width=1340&height=620&",
     "skills": [
       "Friendship",
       "Lost Connection",
@@ -45,8 +45,8 @@
   },
   "zuko": {
     "name": "zuko",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1360035118458208427/IMG_5240.png?ex=685b35e8&is=6859e468&hm=c35d4529f07919094f589975b494dfe1a3a6a179e7ce1228b214cfca59e54416&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1360035174569607238/IMG_5241.png?ex=685b35f5&is=6859e475&hm=24e96c8a8c10aefb3ab72797a4407aa989f6c857fb8b109fe332a998520dd55a&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363959853730500779/IMG_5240.jpg?ex=685f99da&is=685e485a&hm=030503bde26565ef0443fa1373e4e0bdf6a4c6925977c01c0f8c3aeef8e6579d&format=webp&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363959869035642910/IMG_5241.jpg?ex=685f99dd&is=685e485d&hm=fc6b0a8c9bae8f4a9243a88f10cd09d7f839e8f3e6956cb9f88b2a7da2bd2c9c&format=webp&width=1340&height=620&",
     "skills": [
       "virtue and vice",
       "dancing dragon",
@@ -57,8 +57,8 @@
   },
   "azula": {
     "name": "azula",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1360035651990589500/IMG_5115.png?ex=685b3667&is=6859e4e7&hm=8221fcce481ea938e2725559c8f71553ee48c0e495b7e61b322d31f19056d9b9&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1360035710547005570/IMG_5116.png?ex=685b3675&is=6859e4f5&hm=161d2c7d47fbafa207b01d4ae0efdfbd1e7a5d035e3f22d339bc9258461dbbb9&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363959708980871351/IMG_5115.PNG?ex=685f99b7&is=685e4837&hm=e6f46f6edee82509cd616f3e9b7acb6fae8bb02bba438dae8aebeb7450189552&format=webp&quality=lossless&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363959725443649706/IMG_5116.PNG?ex=685f99bb&is=685e483b&hm=6b40893147c9f3b18689cbc83a03fafd3eb197ea47832e5217ed716fe127360f&format=webp&quality=lossless&width=1340&height=620&",
     "skills": [
       "Blue Flames",
       "Unhinged",
@@ -68,8 +68,8 @@
   },
   "bumi": {
     "name": "bumi",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1364293678994292838/IMG_5889.png?ex=685ae200&is=68599080&hm=25ebf803f9cee0eb00181bf3993bae40e6e9bb5e6bd5bd47ecef4fc25f8b60f6&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1364293757956263966/IMG_5888.png?ex=685ae213&is=68599093&hm=660896ad72255d88da2bd657b531c61555a19eab8ab3fb9a7327094c830eb3e5&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363960144190242856/IMG_5889.PNG?ex=685f9a1f&is=685e489f&hm=db2617d9a9678d9b38301992208fa14869b88eac3aa157e451f23fcabc859038&format=webp&quality=lossless&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363960130349301780/IMG_5888.jpg?ex=685f9a1c&is=685e489c&hm=665fdcb41307883d87e1a3d40ac95de3291c7d319ca42b34787e133cbe5826fa&format=webp&width=1340&height=620&",
     "skills": [
       "New Power",
       "Punch",
@@ -79,8 +79,8 @@
   },
   "iroh": {
     "name": "iroh",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1360042247160332378/image0.png?ex=685b3c8c&is=6859eb0c&hm=05506f2ddaa20b75f8a5b8b4ff8bde6b231d6e067be3cc9a65ae230baaa30ec8&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1360042314227122237/IMG_5098.png?ex=685b3c9c&is=6859eb1c&hm=bb6f57e435239b5c8050abd1adf1b484f0164786d76bbd79f5f1af7e69abda7b&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363965520554098748/IMG_5908.PNG?ex=685f9f21&is=685e4da1&hm=9e39a6f6a9ae74f1efa762f29ddc2aea3b9ea16da63e745cc75089e0ea2d99f7&format=webp&quality=lossless&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363965536098062458/IMG_5909.jpg?ex=685f9f25&is=685e4da5&hm=a60fa3ebe0bd960cc1519658811153775cb12bffa621cd5e5abc902e3cafb612&format=webp&width=1340&height=620&",
     "skills": [
       "Dragon of the West",
       "Remorse",
@@ -90,8 +90,8 @@
   },
   "asami": {
     "name": "asami",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1360042690804318208/IMG_5153.png?ex=685b3cf5&is=6859eb75&hm=1b0585244148bafa69e5ed517867fa2f59140f06af0913bb64790f7be38c7159&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1360042761054584843/IMG_5154.png?ex=685b3d06&is=6859eb86&hm=518d67645f7252c91c7b6d6437a1de6b5821f0a35e1b90a7ce2b1bd4168788d4&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363959746088009758/IMG_5153.jpg?ex=685f99c0&is=685e4840&hm=9d0860f448148f85895fb8790167817fdfeae3139b0b3bc249ce1ff301902b52&format=webp&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363959761032446073/IMG_5154.jpg?ex=685f99c4&is=685e4844&hm=cfe5495c048757e7cb6b2d34a72bed7c8f62ca94953f26dd4aaf695100278da2&format=webp&width=1340&height=620&",
     "skills": [
       "Best Driver",
       "Apple of my Eye",
@@ -101,8 +101,8 @@
   },
   "katara": {
     "name": "katara",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1360043816169639987/IMG_5242.png?ex=685b3e02&is=6859ec82&hm=9ad897f4fdf4af25bdece6d337237ac3de92e8ec15f2562def050faf873d904e&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1360043897446731907/IMG_5243.png?ex=685b3e15&is=6859ec95&hm=2b28c47268b84b3893ac964f362c80690cc58da39a4e2aca17c023f45b3929be&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363959886970622095/IMG_5242.jpg?ex=685f99e2&is=685e4862&hm=93adbf4641fcb8a6fbef4b0cb4e5b9e87059f029e82a817990419f003679a51f&format=webp&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363959904720912494/IMG_5243.jpg?ex=685f99e6&is=685e4866&hm=42ed198d8ad5cf432dca2e36aa59d9f1d43cd2d6c70ed9ddf4caf5cb1a5b8e63&format=webp&width=1340&height=620&",
     "skills": [
       "Frost Shield",
       "Blizzard",
@@ -112,8 +112,8 @@
   },
   "toph": {
     "name": "toph",
-    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363960068701163692/IMG_5877.PNG?ex=6808970d&is=6807458d&hm=dcbde3c78993b2b4953a7dc1eeff12b874e11d1602f90b36608251c4da3d84fa&format=webp&quality=lossless&width=1100&height=508&",
-    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363960081942708366/IMG_5878.PNG?ex=68089710&is=68074590&hm=26b961f0f48c4a0aebba683511d646bc7050943f59b9fe7814578f687a4fa919&format=webp&quality=lossless&width=1340&height=620&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363960068701163692/IMG_5877.PNG?ex=685f9a0d&is=685e488d&hm=abb310f37e716533d2528282f4d61f9c638c634410ff3dae42d6c05b7b890351&format=webp&quality=lossless&width=1100&height=508&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363960081942708366/IMG_5878.PNG?ex=685f9a10&is=685e4890&hm=11070585b9aeb948fd05348bf61385d5a1fb6e2208d9f71277480842517a596e&format=webp&quality=lossless&width=1340&height=620&",
     "skills": [
       "Blind Bandit",
       "The Fuzzy",
@@ -134,8 +134,8 @@
   },
   "teo": {
     "name": "teo",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1360044523882807548/IMG_5247.png?ex=685b3eaa&is=6859ed2a&hm=e932841b277407c86951014fb8529a6f9cd0deb3a72251ca06a015a192f5f84d&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1360044574302670848/IMG_5248.png?ex=685b3eb6&is=6859ed36&hm=c419c03f06c2152f3055e14113cf69ae16dcb5ebe22b3c587a45e96465de2c41&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363959948253466687/IMG_5247.jpg?ex=685f99f0&is=685e4870&hm=d6149794888a0dcbc3797ed2e7e871a3780d87b2661300a2941de6759c4c98bd&format=webp&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363959960496635974/IMG_5248.jpg?ex=685f99f3&is=685e4873&hm=f0b15d09bc9725b192b29cf0308a52581a88551db55b51e70113221ea9e481bd&format=webp&width=1340&height=620&",
     "skills": [
       "Operation Eclipse",
       "Father's Inventions",
@@ -145,8 +145,8 @@
   },
   "borte": {
     "name": "Borte",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1360044744373174444/IMG_5306.png?ex=685b3edf&is=6859ed5f&hm=54f5caa20f166840815cacb4d7beecac378ab9d4287bed00cff9c424af68cb7b&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1360044820747255899/IMG_5307.png?ex=685b3ef1&is=6859ed71&hm=d6b3948a3ac17d0d3a59ac808e5cf64a683d738b51b8bc90d882878a0a435c9a&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363959978368569514/IMG_5306.jpg?ex=685f99f7&is=685e4877&hm=e9432f281633624fa35ff89bc055dadb6c7436661e0e8539942633ac5ed21df9&format=webp&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363959992536928359/IMG_5307.jpg?ex=685f99fb&is=685e487b&hm=f7877974a3c3d5259e27f15ae05c76c7f0e70312035b5efcf09afaf3f4e53234&format=webp&width=1340&height=620&",
     "skills": [
       "Fanatic Leader",
       "High Priest",
@@ -156,8 +156,8 @@
   },
   "aang": {
     "name": "aang",
-    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363967363963158689/IMG_5800.jpg?ex=68089dd8&is=68074c58&hm=b621d30dc341771f4fbc11dcad82730a6b2fc0937330521782152c061d3955c2&format=webp&width=1340&height=620&",
-    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363967382799908924/IMG_5801.jpg?ex=68089ddd&is=68074c5d&hm=c25e9e107568f044ae99ab71615d275474e531f90e66c3451172c754124b49ea&format=webp&width=1340&height=620&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363967363963158689/IMG_5800.jpg?ex=685fa0d8&is=685e4f58&hm=3875b6d5bf9a430956822e03acf2bb02aa9929099ecb06fcdbdd8d8bb3912379&format=webp&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363967382799908924/IMG_5801.jpg?ex=685fa0dd&is=685e4f5d&hm=4c87830066de3f9813f25a0489b575206bdb87bd6d505912b85d3dc96ab6c47f&format=webp&width=1340&height=620&",
     "skills": [
       "Air Ball",
       "Intuition",
@@ -167,8 +167,8 @@
   },
   "kuei": {
     "name": "kuei",
-    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363960008244727808/IMG_5309.jpg?ex=680896ff&is=6807457f&hm=e56a19676ed993088f5e265ee01e28e6e7978da6eceecd5ebec67dd5455e7d8a&format=webp&width=1340&height=620&",
-    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363960021393866782/IMG_5310.jpg?ex=68089702&is=68074582&hm=53c8dc54b464853647ea6eb6e6b18715bb880df93e2f223222b4228dd375ce52&format=webp&width=1340&height=620&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363960008244727808/IMG_5309.jpg?ex=685f99ff&is=685e487f&hm=87c0ab07ade07f905e6312df510ea2cef27c785c15e2d4dcb3376b2cfa70b807&format=webp&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363960021393866782/IMG_5310.jpg?ex=685f9a02&is=685e4882&hm=7e3f02096ca76e8804bfe39a7efb1eb731001bfa4f2a2b8a40e07575a6931261&format=webp&width=1340&height=620&",
     "skills": [
       "Bosco!",
       "Peasant Life",
@@ -178,8 +178,8 @@
   },
   "meelo": {
     "name": "meelo",
-    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363960937245180034/IMG_5900.jpg?ex=680897dc&is=6807465c&hm=770b473fb394ea9193167522d16fce7474cfa147f747e08529ac260420d84563&format=webp&width=1340&height=620&",
-    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363960957067333742/IMG_5901.jpg?ex=680897e1&is=68074661&hm=1a87b23f9b817f7534c598e52eb295cccc299f0c2c8fc8216c853f6203a14f70&format=webp&width=1340&height=620&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363960937245180034/IMG_5900.jpg?ex=685f9adc&is=685e495c&hm=ce6a8eb93c83f2edb167d429b2dc429d4b4ac32b0c803e03b65eb3d7174f567c&format=webp&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363960957067333742/IMG_5901.jpg?ex=685f9ae1&is=685e4961&hm=d8886b492c077c282712efbcbd69f9ca0a9f9bf688182c59e29bf3a1bd0a7c20&format=webp&width=1340&height=620&",
     "skills": [
       "Kid Scooter",
       "Consensus",
@@ -189,8 +189,8 @@
   },
   "piandao": {
     "name": "piandao",
-    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363960972536189049/IMG_5902.jpg?ex=680897e5&is=68074665&hm=cf90473d0072c5ef0c5f811acc04fb8bc48d6610c776802ee364b8a34cf29fea&format=webp&width=1340&height=620&",
-    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363960991301374123/IMG_5903.jpg?ex=680897e9&is=68074669&hm=b5a1e2bef4e3f5f1ca11d2e0f6087971271ab0bf4b35365dd010d2458c1afd36&format=webp&width=1340&height=620&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363960972536189049/IMG_5902.jpg?ex=685f9ae5&is=685e4965&hm=fd1b255d86479f49782c40a327b134a731a2ff5045107d3e1a9bc97485e487dd&format=webp&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363960972536189049/IMG_5902.jpg?ex=685f9ae5&is=685e4965&hm=fd1b255d86479f49782c40a327b134a731a2ff5045107d3e1a9bc97485e487dd&format=webp&width=1340&height=620&",
     "skills": [
       "Blacksmith",
       "Calligrapher",
@@ -200,8 +200,8 @@
   },
   "yue": {
     "name": "yue",
-    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363961007520878602/IMG_5904.jpg?ex=680897ed&is=6807466d&hm=ed10ee88611c2d1d7772e02e5e3ba9f28b937c177aaf072d509b4c2fc418fa59&format=webp&width=1340&height=620&",
-    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363961021823320235/IMG_5905.jpg?ex=680897f0&is=68074670&hm=d2e4de1a197122638eb642c7218a0f795b2193ac9a87e0a84e417973a5696e47&format=webp&width=1340&height=620&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1363961007520878602/IMG_5904.jpg?ex=685f9aed&is=685e496d&hm=e01e1667854b05fd52dd24f8c91236ff6b0a711b32a78195f5be30b530bdd506&format=webp&width=1340&height=620&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1363961021823320235/IMG_5905.jpg?ex=685f9af0&is=685e4970&hm=5687e7640700a335f40a1c10500cce42d4058fa47e3404a3884f3e24d3d11ff1&format=webp&width=1340&height=620&",
     "skills": [
       "Child of the Moon",
       "Sacrifice",
@@ -211,8 +211,8 @@
   },
   "amon": {
     "name": "amon",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1369080716905812028/IMG_6199.png?ex=685b28c7&is=6859d747&hm=fae5214f2f25a68271c4388cc6f560ba3a57bf4e40dbe26b7e7ae0906c8993c5&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1369080807079149580/IMG_6200.png?ex=685b28dc&is=6859d75c&hm=8306f575b660ea18634d37696d95bb29be1c3dd1e70788f5ce826fbaa7a7d3b6&",
+    "image1": "https://cdn.discordapp.com/attachments/1363959600054796468/1367676938885402726/IMG_6199.png?ex=685ff0a8&is=685e9f28&hm=a6e25bb02447c3010c90a64b55e84c897d90a850f2262ca3a0108e3cf76288da&",
+    "image2": "https://cdn.discordapp.com/attachments/1363959600054796468/1367676954404327484/IMG_6200.png?ex=685ff0ac&is=685e9f2c&hm=cb3dad7a97a0bbb0fd26e162668b5bd01c2ddc7b63f7d3ea58cb8b3a7e269a6e&",
     "skills": [
       "Bloodbending",
       "Orator",
@@ -222,8 +222,8 @@
   },
   "king_bumi": {
     "name": "king_bumi",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1369776076200607974/IMG_6312.png?ex=685b0d61&is=6859bbe1&hm=2c64c5574ff0cf71d66c09d38608788fc3ea37a4e1cedfd540bfa06e6a684a5d&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1369776136263045190/IMG_6313.png?ex=685b0d70&is=6859bbf0&hm=7da3038a2be3b9b262aecc4ad25bf54cdc64605db79d386bd941c792520b7efc&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1369686704180691037/IMG_6312.png?ex=685f5765&is=685e05e5&hm=ef079e4554f2d76b6bd5f11ce0a9aabd4342b7e249007c1a5dbe35a97419692f&format=webp&quality=lossless&width=2754&height=1272&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1369686712179101727/IMG_6313.png?ex=685f5767&is=685e05e7&hm=e6f9754a67201ca235073b32fb8471d0d8612113bc09b92704489d9def580e90&format=webp&quality=lossless&width=1100&height=508&",
     "skills": [
       "Wave of Earth",
       "Genomite Ring",
@@ -233,8 +233,8 @@
   },
   "yangchen": {
     "name": "yangchen",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1377733160900628600/IMG_6663.png?ex=685afefe&is=6859ad7e&hm=a8781c8ff37d305807a91c34f8cfc5e90765354fa33b1b47480753a8278fa1e6&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1377733228223397968/IMG_6664.png?ex=685aff0e&is=6859ad8e&hm=dfb3e7593be4e7f98489f2aa179c9f2d7db99423ec737d623ed42879c81c25f9&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1377708447323131978/IMG_6663.png?ex=685f853a&is=685e33ba&hm=8a6646b043b67dd484d62f1de63411a2ace499ac942eaff7aa75a8833925e930&format=webp&quality=lossless&width=2116&height=978&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1377708463974649938/IMG_6664.png?ex=685f853e&is=685e33be&hm=7764c9a1a3653aede36bb310554289a16a4150816939c761e4ab532b23434421&format=webp&quality=lossless&width=2116&height=978&",
     "skills": [
       "Air Sphere",
       "Cyclone Strike",
@@ -244,8 +244,8 @@
   },
   "painted_lady_katara": {
     "name": "painted_lady_katara",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1386870408086818976/image.png?ex=685b4738&is=6859f5b8&hm=f577db2debab1c0ae0b46f71478ad9d91cbc2591bc16869d0e51d544025cc7fb&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1386870477217075200/image.png?ex=685b4748&is=6859f5c8&hm=16ae01ae1d677eaa107ff0710fd95c39e354b2b37673e710b00304383e15e6b7&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1387382504402718790/IMG_7062.png?ex=685fc725&is=685e75a5&hm=6345ce31e35662509a2bb238be21c752b5e238324b0278558344501419b4b45b&format=webp&quality=lossless&width=2754&height=1272&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1387382614985277452/IMG_7063.png?ex=685fc73f&is=685e75bf&hm=7e21f80aa5ac87f3d17f8bdf4e63fd4f4e2d7f9c26b1cc439c698730856c00f7&format=webp&quality=lossless&width=2754&height=1272&",
     "skills": [
       "Shifting Flows",
       "Raging Wave",
@@ -255,8 +255,8 @@
   },
   "unalaq": {
     "name": "unalaq",
-    "image1": "https://cdn.discordapp.com/attachments/1359999945347694672/1387861771800543284/image.png?ex=685ee27f&is=685d90ff&hm=5f0d521fc5cbe7abe3231f985aa378fc03b120335a5a7b38909d7d2ee407424a&",
-    "image2": "https://cdn.discordapp.com/attachments/1359999945347694672/1387861838317883392/image.png?ex=685ee28f&is=685d910f&hm=a579775aa9fb1293c1cff171aa9f0819f0e036b7e5ef92b43c5312f2a555c829&",
+    "image1": "https://media.discordapp.net/attachments/1363959600054796468/1387382709956902913/IMG_7099.png?ex=685fc756&is=685e75d6&hm=6d960f35c0c454f9225a98b0e106dd15112f2f772f58327d5c3e5a1f30749000&format=webp&quality=lossless&width=2754&height=1272&",
+    "image2": "https://media.discordapp.net/attachments/1363959600054796468/1387382721759678546/IMG_7097.png?ex=685fc759&is=685e75d9&hm=24637e606292c60319eb54b3693cd80977ea81faf622b7b5fea8c40b5ce95f64&format=webp&quality=lossless&width=2754&height=1272&",
     "skills": [
       "Soul Destruction",
       "Tree of Time",
